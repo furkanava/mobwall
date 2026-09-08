@@ -8,4 +8,4 @@ These are original fictional briefs, not customer case studies or measured growt
 | [Frame](frame.md) | Photo editor feature gate | How should the paywall explain the export the user just requested? |
 | [Lingo Trail](lingo-trail.md) | New language-learning app offer | How should the CTA change when trial eligibility is unknown or false? |
 
-[Grove's worked design](grove-result.md) is an authored reference output and has a corresponding [SwiftUI UI sample](../swiftui/README.md). The gallery illustration is a design artifact, not a simulator capture or evidence of automated agent performance. Frame and Lingo Trail are input fixtures, not completed app integrations.
+[Grove's worked design](grove-result.md) is an authored reference output and has corresponding [SwiftUI](../swiftui/README.md) and [Android Compose](../android/README.md) UI samples. The gallery illustration is a design artifact, not a simulator capture or evidence of automated agent performance. Frame and Lingo Trail are input fixtures, not completed app integrations.

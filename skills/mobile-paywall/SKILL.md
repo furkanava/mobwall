@@ -36,7 +36,7 @@ For subscription pricing and disclosures, read [offers.md](references/offers.md)
 ## Carry the result into the requested format
 
 - **Screenshot or brief only:** deliver an annotated design specification, exact proposed copy, and a visual mockup if available tools allow. Label mockups and assumed facts. Do not imply a production integration exists.
-- **Existing app + implementation request:** read [implementation.md](references/implementation.md), edit the relevant screen, preserve real product data and purchase handlers, and verify the affected flow with available build/test/preview tools.
+- **Existing app + implementation request:** read [implementation.md](references/implementation.md) and, for native Android, [android.md](references/android.md), edit the relevant screen, preserve real product data and purchase handlers, and verify the affected flow with available build/test/preview tools.
 - **No app + code request:** infer a framework only when the context supports it; otherwise ask which framework. Separate reusable UI from billing callbacks. Label mock data and integration work. Do not describe a visual sample as a working checkout.
 
 For every changed purchase screen, consider product loading and failure, purchase pending/success/cancellation/failure, restore results, existing entitlement, trial eligibility, small screens, larger text, and localization. Implement relevant states when in scope; report states that cannot be exercised. Purchase cancellation is a normal outcome, not a scary error. Never grant access just because the CTA was tapped.

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Grove Paywall Demo</string>
+    <string name="brand">GROVE / PLUS</string>
+    <string name="headline">Make room for a little calm.</string>
+    <string name="intro">Unlock the full library of guided sessions with Grove Plus.</string>
+    <string name="benefit_sessions">Guided sessions for everyday moments</string>
+    <string name="benefit_offline">Save your favorites for offline listening</string>
+    <string name="benefit_routine">Build a routine at your own pace</string>
+    <string name="close">Close subscription offer</string>
+    <string name="loading">Loading subscription options…</string>
+    <string name="unavailable">Subscription options are unavailable right now.</string>
+    <string name="retry">Try again</string>
+    <string name="waiting">Please wait…</string>
+    <string name="restore">Restore purchases</string>
+    <string name="terms">Terms</string>
+    <string name="privacy">Privacy</string>
+    <string name="yearly">Yearly</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly_price">$39.99 / year</string>
+    <string name="monthly_price">$5.99 / month</string>
+    <string name="yearly_detail">About $3.33 / month, billed yearly</string>
+    <string name="monthly_detail">Billed monthly</string>
+    <string name="yearly_cta">Subscribe yearly</string>
+    <string name="monthly_cta">Subscribe monthly</string>
+    <string name="yearly_disclosure">$39.99 charged today, then every year. Auto-renews until canceled. Manage or cancel in your Google Play subscription settings.</string>
+    <string name="monthly_disclosure">$5.99 charged today, then every month. Auto-renews until canceled. Manage or cancel in your Google Play subscription settings.</string>
+    <string name="demo_purchase">Demo only — no payment was made. Connect your verified billing service to enable purchases.</string>
+    <string name="demo_restore">Demo only — no active subscription was found.</string>
+    <string name="demo_legal">Demo only — supply your published legal URL.</string>
+    <string name="free_screen">The free Grove experience continues here.</string>
+    <string name="show_offer">Show subscription offer</string>
+</resources>

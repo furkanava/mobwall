@@ -1,18 +1,20 @@
 # Validation record
 
-Release candidate: **0.1.0**, checked **2026-09-08**. This record states what was exercised locally. CI configuration and behavioral rubrics are not completed runs.
+Release candidate: **0.1.1**, checked **2026-09-08**. This record states what was exercised locally. CI configuration and behavioral rubrics are not completed runs.
 
 | Check | Result | Evidence and limits |
 | --- | --- | --- |
 | Skill structure | Passed | Bundled skill-creator validator accepted the frontmatter and folder. |
-| Repository integrity | Passed | `python3 scripts/check.py`: portable frontmatter subset, local Markdown file links, ten evaluation cases and their fixture paths. External URLs are not tested by this script. |
+| Repository integrity | Passed | `python3 scripts/check.py`: portable frontmatter subset, local Markdown file links, eleven evaluation cases and their fixture paths. External URLs are not tested by this script. |
 | Installer behavior | Passed | 15 `unittest` tests on macOS: all agent destinations, shared-path deduplication, exact copies, idempotence, dry run, conflicts, links, failed copy cleanup, invalid input, and paths with spaces. |
 | SwiftUI source | Passed on macOS SDK | `swiftc -typecheck` accepted the sample. This does not establish compilation against iOS SDKs. |
 | SwiftUI preview | Rendered and visually inspected on macOS | Hosted source preview at 390 × 900 points, saved as `assets/swiftui-preview.png`. Plan cards, billed totals, copy and footer inspected. Not an iOS device capture or interaction test. |
 | Gallery artwork | Rendered and visually inspected | Original `assets/preview.svg` rasterized to PNG; typography and bounds reviewed. Illustration differs from native system rendering. |
+| Android Compose debug APK | Passed | `:app:assembleDebug` completed locally with Gradle 9.1.0, AGP 9.0.1, Kotlin/Compose compiler 2.2.10, SDK 36. Android SDK/Gradle caches and debug signing state were isolated where needed for workspace permissions. |
+| Android device/preview/TalkBack | Not run | Standard/large-text preview definitions are included, but no Android preview rendering, emulator interaction, or accessibility service test was performed. |
 | iOS simulator/build | Not run locally | Installed Command Line Tools do not include the iOS simulator SDK. A macOS GitHub Actions job is configured for iOS type-checking; it has not run before publication. |
 | Store purchase/restore flow | Not run | Sample intentionally uses demo handlers and no store connection. Real products, legal destinations and entitlement verification belong to the host app. |
-| Behavioral model evaluations | Not run as independent sessions | Ten scenarios and rubrics are supplied. The Grove walkthrough is an authored reference example, not a benchmark result. |
+| Behavioral model evaluations | Not run as independent sessions | Eleven scenarios and rubrics are supplied. The Grove walkthrough is an authored reference example, not a benchmark result. |
 | Linux/Windows CI | Configured, not run here | Workflow includes all three operating systems. Local success does not establish remote runner results. |
 
 ## Client compatibility

@@ -8,3 +8,11 @@ xcuserdata/
 .env
 .env.*
 !.env.example
+
+# Android local/build state
+.gradle/
+.kotlin/
+build/
+local.properties
+*.apk
+*.aab

@@ -29,8 +29,8 @@ Yalnızca analiz istiyorsan bunu açıkça belirt; skill bu durumda kodu değiş
 
 - Sıfırdan tasarım, mevcut ekran analizi ve projede uygulama akışı.
 - Fiyat/deneme açıklığı, görsel hiyerarşi, erişilebilirlik ve hata durumları.
-- SwiftUI, Flutter ve React Native için uygulama rehberi.
-- Gerçek ödeme yapmayan [SwiftUI örnek ekranı](../examples/swiftui/README.md).
+- SwiftUI, Kotlin/Jetpack Compose, Flutter ve React Native için uygulama rehberi.
+- Gerçek ödeme yapmayan [SwiftUI örnek ekranı](../examples/swiftui/README.md) ve [Android Compose demo projesi](../examples/android/README.md).
 - Üç kurmaca ürün senaryosu, davranış değerlendirmeleri ve kurulum testleri.
 
 Skill ücretsizdir; kullandığın AI aracının kendi kullanım ücretleri olabilir. Zorunlu ücretli servis, hesap, telemetri veya lisans anahtarı yoktur. Ölçülmemiş dönüşüm artışı ve mağaza onayı vaat etmez.

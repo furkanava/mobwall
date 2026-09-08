@@ -17,6 +17,8 @@ For instruction changes, run relevant scenarios from [evals](evals/README.md) in
 
 For SwiftUI changes, type-check with an iOS SDK and inspect the screen on compact and standard devices with larger text. Clearly distinguish compilation, visual inspection, and store-sandbox testing.
 
+For native Android changes, build `examples/android` with `./gradlew :app:assembleDebug` and inspect the affected screen in an emulator/device when available. Keep UI-build and Google Play purchase-test results separate.
+
 ## Examples and evidence
 
 Use original, fictional, or explicitly authorized assets. Mark fictional prices and results. Include a reproducible input, output, design rationale, and verification limits. Never include private app code, receipts, customer data, or keys in a public issue.
