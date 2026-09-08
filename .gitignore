@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+.build/
+*.xcuserstate
+xcuserdata/
+.env
+.env.*
+!.env.example

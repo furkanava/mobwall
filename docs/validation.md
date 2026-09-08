@@ -1,0 +1,36 @@
+# Validation record
+
+Release candidate: **0.1.0**, checked **2026-09-08**. This record states what was exercised locally. CI configuration and behavioral rubrics are not completed runs.
+
+| Check | Result | Evidence and limits |
+| --- | --- | --- |
+| Skill structure | Passed | Bundled skill-creator validator accepted the frontmatter and folder. |
+| Repository integrity | Passed | `python3 scripts/check.py`: portable frontmatter subset, local Markdown file links, ten evaluation cases and their fixture paths. External URLs are not tested by this script. |
+| Installer behavior | Passed | 15 `unittest` tests on macOS: all agent destinations, shared-path deduplication, exact copies, idempotence, dry run, conflicts, links, failed copy cleanup, invalid input, and paths with spaces. |
+| SwiftUI source | Passed on macOS SDK | `swiftc -typecheck` accepted the sample. This does not establish compilation against iOS SDKs. |
+| SwiftUI preview | Rendered and visually inspected on macOS | Hosted source preview at 390 × 900 points, saved as `assets/swiftui-preview.png`. Plan cards, billed totals, copy and footer inspected. Not an iOS device capture or interaction test. |
+| Gallery artwork | Rendered and visually inspected | Original `assets/preview.svg` rasterized to PNG; typography and bounds reviewed. Illustration differs from native system rendering. |
+| iOS simulator/build | Not run locally | Installed Command Line Tools do not include the iOS simulator SDK. A macOS GitHub Actions job is configured for iOS type-checking; it has not run before publication. |
+| Store purchase/restore flow | Not run | Sample intentionally uses demo handlers and no store connection. Real products, legal destinations and entitlement verification belong to the host app. |
+| Behavioral model evaluations | Not run as independent sessions | Ten scenarios and rubrics are supplied. The Grove walkthrough is an authored reference example, not a benchmark result. |
+| Linux/Windows CI | Configured, not run here | Workflow includes all three operating systems. Local success does not establish remote runner results. |
+
+## Client compatibility
+
+| Client | Discovery documentation checked | Installer file-copy tests | Actual client discovery + task execution |
+| --- | --- | --- | --- |
+| Claude Code | Yes | Passed | Unverified |
+| Codex | Yes | Passed | Unverified |
+| Cursor | Yes | Passed | Unverified |
+| Antigravity | Yes | Passed | Unverified |
+
+See [official setup sources](installation.md#official-sources). No client-specific hooks or tool grants are required. The skill is portable instruction content; models may make different design choices and their available image, code, and preview tools differ.
+
+## Reproduce local checks
+
+```sh
+python3 scripts/check.py
+python3 -m unittest discover -s tests -v
+```
+
+Run the SwiftUI sample checks on a Mac using [the sample instructions](../examples/swiftui/README.md). Use [the evaluation protocol](../evals/README.md) for client runs, then update this record with actual dates, client/model versions, artifacts, and outcomes. Never replace an unverified result with “passed” based solely on a planned check.

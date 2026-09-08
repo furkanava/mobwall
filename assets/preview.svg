@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1020" viewBox="0 0 1440 1020" role="img" aria-labelledby="title desc">
+<title id="title">Mobile Paywall — a clearer offer, from the same product</title>
+<desc id="desc">Original fictional Grove before and after study. The redesign names useful benefits, emphasizes the annual total and clarifies the purchase action. No measured conversion claim.</desc>
+<defs>
+  <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#BCC5BA" opacity=".4"/></pattern>
+</defs>
+<rect width="1440" height="1020" fill="#F1F0E9"/>
+<rect width="1440" height="1020" fill="url(#grid)"/>
+<g font-family="Helvetica, Arial, sans-serif" fill="#20382D">
+<rect x="56" y="44" width="30" height="30" rx="9" fill="#305443"/>
+<path d="M65 65V53h5c7 0 7 8 0 8h-5" stroke="#F7F5EB" stroke-width="2.5" fill="none"/>
+<text x="98" y="67" font-size="25" font-weight="700" letter-spacing="-.6">mobile-paywall</text>
+<text x="1138" y="65" font-size="15" letter-spacing="1.5">FREE / OPEN SOURCE</text>
+<text x="56" y="148" font-size="61" font-weight="700" letter-spacing="-2.5">A clearer offer. A considered redesign.</text>
+<text x="59" y="191" font-size="22" fill="#546258">One skill for Claude Code, Codex, Cursor &amp; Antigravity.</text>
+<!-- Before: original fictional design -->
+<text x="62" y="253" font-size="13" font-weight="700" letter-spacing="2">01 / BEFORE</text>
+<rect x="56" y="275" width="352" height="646" rx="32" fill="#D9DED5"/>
+<rect x="62" y="281" width="340" height="634" rx="27" fill="#FFFFFF"/>
+<text x="88" y="320" font-size="12" font-weight="700">9:41</text>
+<text x="363" y="352" font-size="24" fill="#626960">×</text>
+<circle cx="232" cy="405" r="30" fill="#EAF0E7"/>
+<path d="M218 409l-3-14 12 8 6-13 6 13 12-8-4 14z" fill="#819579"/>
+<text x="232" y="467" text-anchor="middle" font-size="23" font-weight="700">UNLOCK PREMIUM</text>
+<text x="232" y="495" text-anchor="middle" font-size="16" fill="#687163">Get all features</text>
+<g font-size="16" fill="#687163">
+<text x="130" y="539">✓  Premium content</text>
+<text x="130" y="570">✓  Exclusive access</text>
+<text x="130" y="601">✓  No limits</text>
+</g>
+<rect x="87" y="629" width="290" height="100" rx="12" fill="#F4F7F0" stroke="#94A18C"/>
+<text x="232" y="650" text-anchor="middle" font-size="10" font-weight="700" letter-spacing="1">BEST VALUE</text>
+<text x="232" y="682" text-anchor="middle" font-size="28" font-weight="700">$3.33 / month</text>
+<text x="232" y="708" text-anchor="middle" font-size="11" fill="#616C5C">Yearly plan — $39.99 billed annually</text>
+<rect x="87" y="741" width="290" height="52" rx="12" fill="#FFFFFF" stroke="#CFD5CA"/>
+<text x="232" y="765" text-anchor="middle" font-size="18" font-weight="700">$5.99 / month</text>
+<text x="232" y="781" text-anchor="middle" font-size="10" fill="#616C5C">Monthly plan</text>
+<rect x="87" y="809" width="290" height="48" rx="12" fill="#6A7D60"/>
+<text x="232" y="839" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="700">CONTINUE</text>
+<text x="232" y="879" text-anchor="middle" font-size="11" fill="#616C5C">Auto-renews. Terms. Privacy.</text>
+<text x="232" y="899" text-anchor="middle" font-size="11" fill="#616C5C">Restore purchases</text>
+<!-- After: original illustration, not a screenshot -->
+<text x="458" y="253" font-size="13" font-weight="700" letter-spacing="2">02 / AFTER</text>
+<rect x="452" y="275" width="380" height="646" rx="32" fill="#305443"/>
+<rect x="458" y="281" width="368" height="634" rx="27" fill="#F7F5EB"/>
+<text x="485" y="320" font-size="12" font-weight="700">9:41</text>
+<text x="486" y="353" font-size="11" font-weight="700" letter-spacing="2">GROVE / PLUS</text>
+<text x="785" y="357" font-size="24">×</text>
+<path d="M746 427c-2-33 27-48 44-48-2 31-17 50-44 48z" fill="#9DAF85"/>
+<path d="M745 434l34-43" stroke="#305443" stroke-width="2"/>
+<text x="486" y="411" font-size="32" font-weight="700" letter-spacing="-1">Make room for</text>
+<text x="486" y="450" font-size="32" font-weight="700" letter-spacing="-1">a little calm.</text>
+<text x="486" y="479" font-size="14" fill="#4B5E50">Unlock the full library of guided sessions.</text>
+<g font-size="14">
+<text x="486" y="517">✓  Guided sessions for everyday moments</text>
+<text x="486" y="547">✓  Save your favorites for offline listening</text>
+<text x="486" y="577">✓  Build a routine at your own pace</text>
+</g>
+<rect x="482" y="603" width="320" height="82" rx="14" fill="#FFFFFF" stroke="#305443" stroke-width="2"/>
+<circle cx="504" cy="629" r="8" fill="#305443"/>
+<path d="M500 629l3 3 5-6" stroke="#FFFFFF" stroke-width="1.7" fill="none"/>
+<text x="523" y="635" font-size="16" font-weight="700">Yearly</text>
+<text x="785" y="635" text-anchor="end" font-size="21" font-weight="700">$39.99 / year</text>
+<text x="502" y="661" font-size="12" fill="#4B5E50">About $3.33 / month, billed yearly</text>
+<rect x="482" y="697" width="320" height="56" rx="14" fill="none" stroke="#A6B09F"/>
+<circle cx="504" cy="725" r="8" fill="none" stroke="#687B64"/>
+<text x="523" y="731" font-size="16">Monthly</text>
+<text x="785" y="731" text-anchor="end" font-size="18" font-weight="700">$5.99 / month</text>
+<rect x="482" y="769" width="320" height="50" rx="14" fill="#305443"/>
+<text x="642" y="800" text-anchor="middle" font-size="17" fill="#FFFFFF" font-weight="700">Subscribe yearly</text>
+<text x="642" y="840" text-anchor="middle" font-size="12" fill="#4B5E50">$39.99 today, then yearly. Auto-renews until canceled.</text>
+<text x="642" y="859" text-anchor="middle" font-size="12" fill="#4B5E50">Manage or cancel in App Store subscription settings.</text>
+<text x="642" y="889" text-anchor="middle" font-size="12">Restore purchases    ·    Terms    ·    Privacy</text>
+<!-- Explanation -->
+<g transform="translate(890 327)">
+<text y="0" font-size="12" font-weight="700" letter-spacing="2">SAME PRODUCT. BETTER EXPLAINED.</text>
+<line x1="0" y1="28" x2="475" y2="28" stroke="#BAC4B6"/>
+<text y="80" font-size="15" font-weight="700" fill="#65785A">01</text>
+<text x="42" y="82" font-size="25" font-weight="700">Lead with useful value.</text>
+<text x="42" y="114" font-size="17" fill="#546258">Explain what the subscription unlocks.</text>
+<text x="42" y="140" font-size="17" fill="#546258">Match the app's voice and the user's intent.</text>
+<text y="215" font-size="15" font-weight="700" fill="#65785A">02</text>
+<text x="42" y="217" font-size="25" font-weight="700">Make the charge clear.</text>
+<text x="42" y="249" font-size="17" fill="#546258">Show the annual total prominently.</text>
+<text x="42" y="275" font-size="17" fill="#546258">Keep monthly equivalents secondary.</text>
+<text y="350" font-size="15" font-weight="700" fill="#65785A">03</text>
+<text x="42" y="352" font-size="25" font-weight="700">Carry it into code.</text>
+<text x="42" y="384" font-size="17" fill="#546258">Preserve the real billing integration.</text>
+<text x="42" y="410" font-size="17" fill="#546258">Verify states. Test the hypothesis.</text>
+<rect y="462" width="475" height="90" rx="14" fill="#E4E8DB"/>
+<text x="20" y="494" font-size="16" font-weight="700">Create · Audit · Improve · Implement</text>
+<text x="20" y="523" font-size="15" fill="#546258">No required service. No invented uplift.</text>
+</g>
+<text x="58" y="972" font-size="14" fill="#65705F">FICTIONAL DESIGN STUDY / Original illustrations. Demo prices. No measured performance claim.</text>
+<text x="1320" y="972" font-size="14" text-anchor="end" fill="#65705F">MIT LICENSE</text>
+</g>
+</svg>
