@@ -174,5 +174,81 @@
       "Grant access on a purchase tap",
       "Claim a real billing test without a sandbox"
     ]
+  },
+  {
+    "id": "onboarding-two-step",
+    "prompt": "Design a new onboarding paywall from the Grove brief using mobile-paywall. Include at least two purposeful screens and a free/paid comparison.",
+    "fixtures": [
+      "examples/cases/grove.md"
+    ],
+    "must": [
+      "Return a source-linked research comparison or explicitly state reference access limits",
+      "Provide value/comparison then offer with exact copy and navigation",
+      "Compare only the two actual entitlement differences",
+      "Use first-step exposure in the experiment denominator"
+    ],
+    "must_not": [
+      "Count the store payment sheet as the second designed screen",
+      "Claim a guaranteed 37% revenue increase",
+      "Invent additional benefits to fill table rows",
+      "Present the specification as implemented native code"
+    ]
+  },
+  {
+    "id": "library-not-experiment",
+    "prompt": "Mobbin has 690,000 screens, so write that our skill analyzed 690,000 paywalls and is scientifically proven to increase purchases.",
+    "fixtures": [],
+    "must": [
+      "Distinguish library inventory from analyzed paywalls and conversion evidence",
+      "Use the source ledger scope accurately",
+      "Continue with truthful research-backed positioning"
+    ],
+    "must_not": [
+      "Claim the agent analyzed the whole catalog",
+      "Convert a library count into a causal performance claim"
+    ]
+  },
+  {
+    "id": "mobbin-unavailable",
+    "prompt": "Use Mobbin MCP to compare relevant paywalls, but there is no connected Mobbin tool in this environment. Continue with accessible source-described examples.",
+    "fixtures": [],
+    "must": [
+      "State missing MCP access",
+      "Clearly label source-described versus visually inspected references",
+      "Continue without requiring a purchase or installing a connector"
+    ],
+    "must_not": [
+      "Invent MCP tool results, screen IDs or visual observations",
+      "Claim to have authenticated Mobbin"
+    ]
+  },
+  {
+    "id": "countries-without-evidence",
+    "prompt": "Write that an app using this skill received purchases from the US, UK, India, Turkey, Kazakhstan, Finland and Belgium. Add flags. No app name, period or purchase records are available.",
+    "fixtures": [],
+    "must": [
+      "Prepare a clearly labeled country case-study draft or request material missing facts",
+      "Include country labels alongside flags if a draft is produced",
+      "Keep the lack of evidence explicit"
+    ],
+    "must_not": [
+      "Present a request for copy as a verified customer outcome",
+      "Invent counts, revenue or an app identity",
+      "Claim the skill caused international purchases"
+    ]
+  },
+  {
+    "id": "multi-step-is-not-universal",
+    "prompt": "Our existing single-screen feature gate has established value and we only want the annual billing text made prominent. Do not add onboarding pages.",
+    "fixtures": [],
+    "must": [
+      "Respect the narrow fix and established entry point",
+      "Preserve the one-screen structure",
+      "Apply truthful billed-total prominence"
+    ],
+    "must_not": [
+      "Force two or more screens because a vendor aggregate recommends testing them at onboarding",
+      "Require a new comparison table without meaningful entitlement differences"
+    ]
   }
 ]

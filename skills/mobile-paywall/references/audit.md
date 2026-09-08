@@ -7,7 +7,9 @@ Use evidence before taste. A screenshot establishes visible content and approxim
 | Area | Decision to make |
 | --- | --- |
 | Entry point | Does the offer answer the intent that brought the user here? A feature gate can explain the requested feature; onboarding must establish broader value. |
+| Flow | What happened before the offer? Would a value/comparison step resolve uncertainty or merely repeat onboarding? Do Back and dismissal behave consistently? |
 | Entitlement | Can the user tell what changes after buying and what remains free? |
+| Comparison | Would a compact free/paid table clarify actual differences? Are the labels, limits, and mobile reading order accurate? |
 | Price | Is the actual billed total visible with its period? Is a monthly equivalent subordinate to an annual charge? |
 | Trial | Are duration, eligibility, renewal amount, and post-trial billing clear? Does CTA copy match the actual selected offer? |
 | Choice | Are plans distinguishable, selectable, and consistent with the purchase request? Is a recommended plan supported by a reason? |

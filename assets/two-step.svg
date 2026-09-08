@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1020" viewBox="0 0 1440 1020" role="img" aria-labelledby="title desc">
+<title id="title">A two-screen Grove paywall candidate</title>
+<desc id="desc">Original specification: first explain value and compare Free with Plus, then show subscription plans. Fictional example; no measured conversion claim or native runtime capture.</desc>
+<rect width="1440" height="1020" fill="#F1F0E9"/>
+<g font-family="Helvetica, Arial, sans-serif" fill="#20382D">
+<text x="60" y="65" font-size="25" font-weight="700">mobile-paywall</text>
+<text x="60" y="134" font-size="51" font-weight="700" letter-spacing="-1.8">Explain the value. Then make the offer.</text>
+<text x="62" y="173" font-size="20" fill="#546258">Two purposeful screens + an honest Free / Plus comparison. A candidate to test, not a guaranteed winner.</text>
+<rect x="72" y="220" width="500" height="716" rx="32" fill="#305443"/>
+<rect x="78" y="226" width="488" height="704" rx="27" fill="#F7F5EB"/>
+<text x="110" y="274" font-size="13" font-weight="700" letter-spacing="2">GROVE / PLUS</text>
+<text x="473" y="274" font-size="13">1 OF 2</text>
+<text x="523" y="274" font-size="21">×</text>
+<text x="110" y="347" font-size="42" font-weight="700" letter-spacing="-1">Make room for</text>
+<text x="110" y="397" font-size="42" font-weight="700" letter-spacing="-1">a little calm.</text>
+<text x="110" y="443" font-size="17" fill="#4B5E50">Keep your five free starter sessions, or unlock</text>
+<text x="110" y="470" font-size="17" fill="#4B5E50">the full library and offline listening with Plus.</text>
+<rect x="105" y="514" width="434" height="211" rx="16" fill="#FFFFFF" stroke="#CBD3C5"/>
+<rect x="105" y="514" width="434" height="52" rx="16" fill="#E4E8DB"/>
+<path d="M105 551h434v15H105z" fill="#E4E8DB"/>
+<text x="124" y="547" font-size="14" font-weight="700">WHAT YOU GET</text>
+<text x="345" y="547" text-anchor="middle" font-size="14" font-weight="700">FREE</text>
+<text x="467" y="547" text-anchor="middle" font-size="14" font-weight="700">PLUS</text>
+<text x="124" y="604" font-size="16">Guided sessions</text>
+<text x="345" y="593" text-anchor="middle" font-size="15">5 starter</text>
+<text x="345" y="615" text-anchor="middle" font-size="15">sessions</text>
+<text x="467" y="604" text-anchor="middle" font-size="15" font-weight="700">Full library</text>
+<line x1="124" y1="642" x2="520" y2="642" stroke="#DDE2D7"/>
+<text x="124" y="689" font-size="16">Offline listening</text>
+<text x="345" y="689" text-anchor="middle" font-size="14">Not included</text>
+<text x="467" y="689" text-anchor="middle" font-size="15" font-weight="700">Included</text>
+<rect x="106" y="769" width="432" height="58" rx="16" fill="#305443"/>
+<text x="322" y="805" text-anchor="middle" font-size="19" fill="#FFFFFF" font-weight="700">See plans →</text>
+<text x="322" y="868" text-anchor="middle" font-size="16">Continue with free sessions</text>
+<text x="322" y="898" text-anchor="middle" font-size="12" fill="#546258">This step does not start a purchase.</text>
+<path d="M625 537h179m-18-15l18 15-18 15" fill="none" stroke="#7C8D72" stroke-width="3"/>
+<text x="720" y="582" text-anchor="middle" font-size="12" letter-spacing="1.2">VALUE → OFFER</text>
+<text x="720" y="613" text-anchor="middle" font-size="13" fill="#546258">Back preserves</text>
+<text x="720" y="634" text-anchor="middle" font-size="13" fill="#546258">plan selection.</text>
+<rect x="866" y="220" width="500" height="716" rx="32" fill="#305443"/>
+<rect x="872" y="226" width="488" height="704" rx="27" fill="#F7F5EB"/>
+<text x="904" y="274" font-size="15">← Back</text>
+<text x="1264" y="274" font-size="13">2 OF 2</text>
+<text x="1317" y="274" font-size="21">×</text>
+<text x="904" y="348" font-size="42" font-weight="700" letter-spacing="-1">Choose your</text>
+<text x="904" y="398" font-size="42" font-weight="700" letter-spacing="-1">Plus plan.</text>
+<text x="904" y="443" font-size="17" fill="#4B5E50">Full library and offline listening, on your terms.</text>
+<rect x="900" y="489" width="432" height="100" rx="16" fill="#FFFFFF" stroke="#305443" stroke-width="2"/>
+<circle cx="925" cy="523" r="9" fill="#305443"/>
+<path d="M920 523l4 4 7-8" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+<text x="945" y="530" font-size="18" font-weight="700">Yearly</text>
+<text x="1312" y="530" text-anchor="end" font-size="27" font-weight="700">$39.99 / year</text>
+<text x="921" y="564" font-size="15" fill="#4B5E50">About $3.33 / month, billed yearly</text>
+<rect x="900" y="605" width="432" height="74" rx="16" fill="none" stroke="#A6B09F"/>
+<circle cx="925" cy="641" r="9" fill="none" stroke="#687B64"/>
+<text x="945" y="648" font-size="18">Monthly</text>
+<text x="1312" y="648" text-anchor="end" font-size="25" font-weight="700">$5.99 / month</text>
+<rect x="900" y="705" width="432" height="58" rx="16" fill="#305443"/>
+<text x="1116" y="741" text-anchor="middle" font-size="19" fill="#FFFFFF" font-weight="700">Subscribe yearly</text>
+<text x="1116" y="795" text-anchor="middle" font-size="14">$39.99 today, then yearly. Auto-renews until canceled.</text>
+<text x="1116" y="819" text-anchor="middle" font-size="14">Manage in your store's subscription settings.</text>
+<text x="1116" y="879" text-anchor="middle" font-size="15">Restore purchases · Terms · Privacy</text>
+<text x="74" y="979" font-size="14" fill="#546258">ORIGINAL DESIGN SPECIFICATION · Fictional Grove offers · Native samples remain the single-screen control.</text>
+</g>
+</svg>

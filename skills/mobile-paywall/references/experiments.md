@@ -14,3 +14,5 @@ Define before launch:
 Use existing analytics events if present. When adding instrumentation is requested, keep exposure deduplicated and success linked to verified entitlement. Do not log receipts, payment details, screenshots, or personal data for this purpose. A suggested event plan is not permission to add telemetry.
 
 If traffic is too low for a meaningful controlled test, begin with comprehension/usability sessions and report qualitative observations. If only aggregate before/after data exists, discuss cohort, pricing, seasonality, and acquisition changes; do not claim the redesign caused the difference.
+
+For a multi-screen experiment, count exposure from the first step; report step drop-off alongside final conversion. Do not switch the denominator to only users who reached pricing. Country comparisons should separate storefront, UI language, currency, platform, acquisition, and offer eligibility; a country flag does not establish a locale or a winning experiment. See [flow-patterns.md](flow-patterns.md).

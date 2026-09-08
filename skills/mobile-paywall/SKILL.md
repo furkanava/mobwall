@@ -25,11 +25,17 @@ Ask only for missing facts that change the offer or block implementation. If pri
 
 Use existing screenshot/image tools if available. If an image cannot be inspected, say so and request an accessible artifact or text; never claim to have seen it. Work with available tools without requiring an account, paid service, or a particular MCP provider.
 
+## Research and compare before a substantial design
+
+For a new paywall or substantial redesign, read [research.md](references/research.md) and inspect relevant references before choosing a structure. If Mobbin is requested or available, read [mobbin.md](references/mobbin.md). Return a concise source-linked comparison table covering context, step purposes, feature comparison, offer clarity, and tradeoffs. Distinguish actually inspected screens from source-described examples; do not claim the full library was analyzed. If reference access is unavailable, state the limit and continue with the brief. Skip this research expansion for a narrow requested fix.
+
 ## Make and explain the decision
 
 For an existing paywall, read [audit.md](references/audit.md). Anchor each material finding to an observable element or code path. Separate observed defects, plausible friction, and unknowns. Prioritize offer correctness and purchase blockers before visual polish. Do not produce an invented numerical conversion score.
 
 For a new screen or substantial redesign, read [design.md](references/design.md). Choose a visual direction and offer structure that fit the product and entry point. Produce one coherent recommendation by default; add a materially different variant when the user asks or there is a real hypothesis to compare. Specify actual headline, benefits, plan labels, CTA, disclosure, and layout. A list of generic design tips is not a finished design.
+
+For onboarding, multi-screen requests, or unclear free/paid boundaries, read [flow-patterns.md](references/flow-patterns.md). In broad onboarding work, include a purposeful two-screen candidate (value/comparison → offer) and explain the control, unless the brief or existing journey makes that expansion inappropriate. Honor an explicit minimum screen count. Evaluate a readable feature table using actual entitlements; do not manufacture differences between billing periods. Neither multi-page layouts nor tables guarantee higher conversion.
 
 For subscription pricing and disclosures, read [offers.md](references/offers.md). Keep the total billed amount and billing period prominent, distinguish trial eligibility states, and preserve a clear dismissal when free access exists. Never fabricate scarcity or hide material terms. Verify current official platform guidance when making a platform-policy claim; if browsing is unavailable, identify the unverified policy question rather than certifying compliance.
 
@@ -48,3 +54,5 @@ Inspect the rendered result when a preview or simulator is available. Check pric
 For a substantial improvement, read [experiments.md](references/experiments.md) and propose a falsifiable test linked to the actual change. Do not force an experiment plan into a narrow cosmetic request.
 
 Finish with the artifact or changed files, the important design decisions, assumptions, what was actually verified, and any remaining integration work. Offer a shareable before/after only when useful; use authorized assets, omit sensitive data, and never publish or send it automatically.
+
+For a production case study or country-based purchase claim, require an identified app, observation period, store/environment, metric, and evidence status. Attribute user-reported data as such. Do not present flags, test purchases, downloads, or an unconfirmed request for marketing copy as proof of real purchases or skill-caused uplift.

@@ -25,6 +25,14 @@ Neyi test ettiğini ve doğrulanamayan noktaları belirt.
 
 Yalnızca analiz istiyorsan bunu açıkça belirt; skill bu durumda kodu değiştirmez. Ekran görüntüsünden başlayabilir veya sıfırdan ürün brief'i verebilirsin.
 
+## Referans araştırması ve iki ekranlı tasarım
+
+Skill artık kapsamlı onboarding tasarımlarında önce kaynakları inceleyip tabloda karşılaştırır; ardından **değer/Ücretsiz–Plus karşılaştırması → planlar ve satın alma** şeklinde iki ekranlı bir aday sunar. Tek ekranlı kontrolü ve istisnaların gerekçesini belirtir. [Örnek akış](../examples/cases/grove-two-step.md) tasarım belirtimidir; mevcut native demolar hâlâ tek ekranlı kontroldür.
+
+[Mobbin MCP isteğe bağlıdır](mobbin.md) ve kendi ücretli planına tabidir. [Araştırma kaydı](../skills/mobile-paywall/references/research.md), video zaman damgalarını, kütüphane sayısıyla deney örneklemi arasındaki farkı ve araştırmaların sınırlarını açıklar.
+
+[Bayraklı ülke vaka şablonu](country-case-study.md): 🇺🇸 🇬🇧 🇮🇳 🇹🇷 🇰🇿 🇫🇮 🇧🇪. Uygulama ve gerçek satın alma verileri henüz sağlanmadığı için doğrulanmış başarı iddiası olarak sunulmaz.
+
 ## İçerik
 
 - Sıfırdan tasarım, mevcut ekran analizi ve projede uygulama akışı.

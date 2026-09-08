@@ -8,7 +8,7 @@ A free, MIT-licensed agent skill for **Claude Code, Codex, Cursor, and Antigravi
 
 *Original fictional design study. Illustrations are not screenshots of a running app. No conversion or revenue uplift is claimed.*
 
-[Türkçe](docs/README.tr.md) · [How it works](skills/mobile-paywall/SKILL.md) · [Example cases](examples/cases/README.md) · [Validation status](docs/validation.md)
+[Türkçe](docs/README.tr.md) · [How it works](skills/mobile-paywall/SKILL.md) · [Example cases](examples/cases/README.md) · [Validation status](docs/validation.md) · [Research & sources](skills/mobile-paywall/references/research.md)
 
 ## Start in your app
 
@@ -49,6 +49,18 @@ Claude Code supports `/mobile-paywall`; Codex supports `$mobile-paywall`. Natura
 
 The core skill is framework-independent, with implementation guidance for SwiftUI, Kotlin/Jetpack Compose, Flutter, and React Native. This release includes a [SwiftUI UI sample](examples/swiftui/README.md) and a [runnable Android Compose demo](examples/android/README.md); it does not bundle Flutter or React Native template apps.
 
+## Research → compare → design → test
+
+For substantial onboarding work, the skill now researches references first, returns a source-linked comparison table, and includes a two-screen candidate: **value / Free-vs-Plus comparison → plans and purchase**. It preserves a meaningful control and explains exceptions for an already complete journey or a narrow fix.
+
+![Original two-screen Grove specification: value and a Free/Plus table followed by the billing offer. Not a native runtime capture or performance result.](assets/two-step.svg)
+
+[Read the worked two-screen specification](examples/cases/grove-two-step.md). The shipped native samples remain the single-screen control; the illustrated two-screen candidate is a specification, not an implemented native flow.
+
+The [source ledger](skills/mobile-paywall/references/research.md) covers the two Mobbin videos, timestamped recommendations and Superwall's onboarding methodology. A large design library is not a conversion experiment. Tables and multi-screen flows are concrete patterns to test, not promises of uplift.
+
+**Optional Mobbin MCP:** use a connected account to inspect relevant screens and full flows, then explain what to adopt and why. [Setup and workflow](docs/mobbin.md). Mobbin is a separate paid service; it is not required by this free skill. Missing access falls back to accessible references without invented search results.
+
 ## Decisions, not a universal template
 
 - Match the message to the user's entry point and the feature being purchased.
@@ -65,6 +77,10 @@ No invented testimonials, fake urgency, hidden fees, or promises of conversion u
 All original skill instructions, references, examples, and utilities are included under [MIT](LICENSE). The Android Gradle wrapper retains its [upstream license](examples/android/gradle/README.md). There is no license key, required account, telemetry, mandatory MCP server, or paid edition. Your chosen AI provider may charge for its own usage. Screenshots and code you give your agent remain subject to that provider's handling; this repository adds no upload service.
 
 The installer only copies local skill files into your chosen project. It makes no network calls, changes no global settings, and refuses to overwrite a different existing skill.
+
+## Production evidence
+
+A [country case-study format](docs/country-case-study.md) is ready with 🇺🇸 🇬🇧 🇮🇳 🇹🇷 🇰🇿 🇫🇮 🇧🇪. No app identity, observation window or production purchase evidence has been supplied for it yet, so it is not presented as a verified success story. Documented owner reports will be attributed separately from controlled experiments.
 
 ## Develop and contribute
 

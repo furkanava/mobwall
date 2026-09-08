@@ -11,12 +11,15 @@ Use the app's existing visual language when available. For a new direction choos
 | Situation | Useful starting structure | Tradeoff |
 | --- | --- | --- |
 | A single locked feature | Feature preview → outcome → relevant entitlement → offer → action | Direct intent match; less space for the whole product story. |
+| New onboarding offer | Screen 1: value + concise free/paid comparison → Screen 2: offer + purchase | A concrete candidate to test against the control; each additional step needs a purpose. |
 | Onboarding with understood value | Short outcome headline → concise benefits → plan choice → action | Fast to scan; relies on onboarding having established value. |
 | Value needs demonstrating | Representative product preview → explanation → offer | More convincing context; more vertical space. |
 | Verified trial, eligible user | Outcome → trial-to-paid timeline → offer → trial CTA | Clarifies what happens next; must adapt for ineligible users. |
 | Meaningfully different tiers | Compact comparison → selected tier → billing terms | Useful distinctions; avoid dense desktop pricing tables. |
 
 These are starting points, not fixed templates. Explain the choice in relation to the user's app. Do not add plans or trials solely to match a pattern.
+
+Read [flow-patterns.md](flow-patterns.md) for two-screen sequencing and accessible feature tables, and [research.md](research.md) for evidence. A comparative reference report and an in-app free/paid table serve different audiences; do not substitute one for the other.
 
 ## Specify a screen someone can implement
 
