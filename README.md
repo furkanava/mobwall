@@ -47,7 +47,7 @@ Claude Code supports `/mobile-paywall`; Codex supports `$mobile-paywall`. Natura
 | Existing mobile project | Scoped changes using the app's framework, design system, product data, and billing handlers. |
 | Request for an experiment | A falsifiable hypothesis, defined metrics, and appropriate verification limits. |
 
-The core skill is framework-independent, with implementation guidance for SwiftUI, Kotlin/Jetpack Compose, Flutter, and React Native. This release includes a [SwiftUI UI sample](examples/swiftui/README.md) and a [runnable Android Compose demo](examples/android/README.md); it does not bundle Flutter or React Native template apps.
+The core skill is framework-independent, with implementation guidance for SwiftUI, Kotlin/Jetpack Compose, Flutter, and React Native. This release includes a [SwiftUI UI sample](examples/swiftui/README.md), a [runnable Android Compose demo](examples/android/README.md), and a [two-step Flutter demo](examples/flutter/README.md). React Native has guidance but no bundled template app.
 
 ## Research → compare → design → test
 
@@ -55,7 +55,7 @@ For substantial onboarding work, the skill now researches references first, retu
 
 ![Original two-screen Grove specification: value and a Free/Plus table followed by the billing offer. Not a native runtime capture or performance result.](assets/two-step.svg)
 
-[Read the worked two-screen specification](examples/cases/grove-two-step.md). The shipped native samples remain the single-screen control; the illustrated two-screen candidate is a specification, not an implemented native flow.
+[Read the worked two-screen specification](examples/cases/grove-two-step.md). The SwiftUI and Compose samples remain the single-screen control. The [Flutter demo](examples/flutter/README.md) implements the two-step candidate with injected demo callbacks.
 
 The [source ledger](skills/mobile-paywall/references/research.md) covers the two Mobbin videos, timestamped recommendations and Superwall's onboarding methodology. A large design library is not a conversion experiment. Tables and multi-screen flows are concrete patterns to test, not promises of uplift.
 
@@ -74,7 +74,7 @@ No invented testimonials, fake urgency, hidden fees, or promises of conversion u
 
 ## Free and open source
 
-All original skill instructions, references, examples, and utilities are included under [MIT](LICENSE). The Android Gradle wrapper retains its [upstream license](examples/android/gradle/README.md). There is no license key, required account, telemetry, mandatory MCP server, or paid edition. Your chosen AI provider may charge for its own usage. Screenshots and code you give your agent remain subject to that provider's handling; this repository adds no upload service.
+All original skill instructions, references, examples, and utilities are included under [MIT](LICENSE). The Android Gradle wrapper retains its [upstream license](examples/android/gradle/README.md); generated Flutter scaffolding retains the [Flutter license](examples/flutter/FLUTTER_LICENSE). There is no license key, required account, telemetry, mandatory MCP server, or paid edition. Your chosen AI provider may charge for its own usage. Screenshots and code you give your agent remain subject to that provider's handling; this repository adds no upload service.
 
 The installer only copies local skill files into your chosen project. It makes no network calls, changes no global settings, and refuses to overwrite a different existing skill.
 
@@ -91,4 +91,4 @@ python3 -m unittest discover -s tests -v
 
 [Contributing](CONTRIBUTING.md) explains how to add an example, improve a decision rule, or test an agent. [Behavioral evaluation cases](evals/README.md) are included; structural checks alone do not prove that a model follows the skill.
 
-Tool discovery paths are checked against official documentation. End-to-end operation in all four clients is **not yet verified**; see the [compatibility matrix](docs/validation.md). The repository includes CI for package checks on Linux, Windows, and macOS, plus iOS sample type-checking on macOS and an Android debug build.
+Tool discovery paths are checked against official documentation. End-to-end operation in all four clients is **not yet verified**; see the [compatibility matrix](docs/validation.md). The repository includes CI for package checks on Linux, Windows, and macOS, plus iOS sample type-checking on macOS, an Android debug build, and Flutter analysis/widget tests/web build.

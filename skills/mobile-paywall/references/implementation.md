@@ -16,7 +16,7 @@ On restore, distinguish restored entitlement, nothing to restore, and failure. R
 | --- | --- |
 | SwiftUI | Existing observable/store state, StoreKit or billing-service wrapper, localized product display prices, Dynamic Type, VoiceOver, safe-area and scroll behavior. |
 | Kotlin / Jetpack Compose | Hoisted UI state, lifecycle-aware collection, Google Play offer/base-plan identity, TalkBack semantics, system insets, Back navigation. Read [android.md](android.md). |
-| Flutter | Existing state management and purchase stream, disposal, localized product data, semantics, text scaling, safe areas and layout constraints. |
+| Flutter | Existing state management and purchase stream, disposal, localized product data, semantics, text scaling, safe areas and layout constraints. Read [flutter.md](flutter.md). |
 | React Native | Existing billing adapter, navigation and state conventions, platform-specific styles, font scaling, accessibility state, safe area and scrolling. |
 
 Use repository dependencies and installed API versions. Read current official framework/SDK documentation when unfamiliar APIs or changed behavior matter. Do not introduce a new payment library just for a layout change.

@@ -43,3 +43,20 @@ jobs:
       - run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
       - run: ./gradlew --no-daemon :app:assembleDebug
         working-directory: examples/android
+
+  flutter-sample:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: examples/flutter
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.44.7'
+          channel: stable
+      - run: flutter pub get
+      - run: dart format --output=none --set-exit-if-changed lib test
+      - run: flutter analyze
+      - run: flutter test
+      - run: flutter build web

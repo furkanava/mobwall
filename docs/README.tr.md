@@ -44,3 +44,7 @@ Skill artık kapsamlı onboarding tasarımlarında önce kaynakları inceleyip t
 Skill ücretsizdir; kullandığın AI aracının kendi kullanım ücretleri olabilir. Zorunlu ücretli servis, hesap, telemetri veya lisans anahtarı yoktur. Ölçülmemiş dönüşüm artışı ve mağaza onayı vaat etmez.
 
 [Ana sayfa](../README.md) · [Doğrulama durumu](validation.md) · [MIT lisansı](../LICENSE)
+
+## Flutter örneği
+
+[Flutter demosu](../examples/flutter/README.md), değer/Free–Plus karşılaştırması → teklif şeklindeki iki ekranlı akışı uygular. iOS/Android hostları ve web önizlemesi bulunur. Plan seçimi geri dönüşte korunur; ödeme ve geri yükleme işlevleri dışarıdan bağlanır. Demo gerçek ödeme yapmaz. [Flutter rehberi](../skills/mobile-paywall/references/flutter.md), mevcut state management, navigation ve billing yapısını koruyarak entegrasyonu açıklar.

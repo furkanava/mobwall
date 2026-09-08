@@ -1,6 +1,6 @@
 # Grove: two-screen onboarding candidate
 
-Original design specification based on [the fictional Grove brief](grove.md). No real purchases, measured uplift, Mobbin screenshots, or new entitlements are claimed. The native SwiftUI/Android samples remain the one-screen control; this document specifies a separate two-screen candidate, not an already implemented native flow.
+Original design specification based on [the fictional Grove brief](grove.md). No real purchases, measured uplift, Mobbin screenshots, or new entitlements are claimed. The native SwiftUI/Android samples remain the one-screen control; this document specifies the two-screen candidate now implemented in the Flutter demo.
 
 ## Research comparison
 
@@ -56,3 +56,7 @@ Before shipping, render both steps on each native platform, test navigation and 
 ## Experiment
 
 Control: the existing one-screen Grove sample. Candidate: value/comparison then the same offer. Use first-step exposure as the denominator and stable user assignment. Record progression, verified paid subscriptions, refunds/cancellation, and retention over a predeclared window. The combined design can test the whole candidate; a separate follow-up is needed to isolate the table's effect from the extra page.
+
+## Runnable Flutter candidate
+
+The [Flutter demo](../flutter/README.md) now implements this structure with fictional offers and demo callbacks. SwiftUI and Compose remain the single-screen control. See the validation record for actual test limits.

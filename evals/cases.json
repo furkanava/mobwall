@@ -250,5 +250,24 @@
       "Force two or more screens because a vendor aggregate recommends testing them at onboarding",
       "Require a new comparison table without meaningful entitlement differences"
     ]
+  },
+  {
+    "id": "flutter-existing-billing",
+    "prompt": "Use mobile-paywall to implement a two-step Flutter onboarding paywall in our existing Riverpod app with an established purchase service. Products can reload while the screen is open. Preserve real prices, offer identities, pending transactions and restore.",
+    "must": [
+      "Read the Flutter reference and retain existing state management and billing adapter.",
+      "Preserve full selected offer identity across steps and disable checkout when that offer disappears.",
+      "Keep transaction observation and verified entitlement handling independent of the screen lifetime.",
+      "Include compact/large-text and back/duplicate-action verification."
+    ],
+    "must_not": [
+      "Install a new billing SDK only to redesign the UI.",
+      "Treat a completed Future or pending payment as entitlement.",
+      "Claim native or sandbox validation from widget tests alone."
+    ],
+    "fixtures": [
+      "examples/flutter/lib/paywall_flow.dart",
+      "examples/flutter/test/paywall_test.dart"
+    ]
   }
 ]

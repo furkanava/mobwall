@@ -16,3 +16,9 @@ build/
 local.properties
 *.apk
 *.aab
+
+# Flutter local state
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.iml

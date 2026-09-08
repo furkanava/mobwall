@@ -1,11 +1,11 @@
 # Validation record
 
-Release candidate: **0.2.0**, checked **2026-09-08**. This record states what was exercised locally. CI configuration and behavioral rubrics are not completed runs.
+Release candidate: **0.3.0**, checked **2026-09-08**. This record states what was exercised locally. CI configuration and behavioral rubrics are not completed runs.
 
 | Check | Result | Evidence and limits |
 | --- | --- | --- |
 | Skill structure | Passed | Bundled skill-creator validator accepted the frontmatter and folder. |
-| Repository integrity | Passed | `python3 scripts/check.py`: portable frontmatter subset, local Markdown file links, sixteen evaluation cases and their fixture paths. External URLs are not tested by this script. |
+| Repository integrity | Passed | `python3 scripts/check.py`: portable frontmatter subset, local Markdown file links, seventeen evaluation cases and their fixture paths. External URLs are not tested by this script. |
 | Installer behavior | Passed | 15 `unittest` tests on macOS: all agent destinations, shared-path deduplication, exact copies, idempotence, dry run, conflicts, links, failed copy cleanup, invalid input, and paths with spaces. |
 | SwiftUI source | Passed on macOS SDK | `swiftc -typecheck` accepted the sample. This does not establish compilation against iOS SDKs. |
 | SwiftUI preview | Rendered and visually inspected on macOS | Hosted source preview at 390 × 900 points, saved as `assets/swiftui-preview.png`. Plan cards, billed totals, copy and footer inspected. Not an iOS device capture or interaction test. |
@@ -14,7 +14,7 @@ Release candidate: **0.2.0**, checked **2026-09-08**. This record states what wa
 | Android device/preview/TalkBack | Not run | Standard/large-text preview definitions are included, but no Android preview rendering, emulator interaction, or accessibility service test was performed. |
 | iOS simulator/build | Not run locally | Installed Command Line Tools do not include the iOS simulator SDK. A macOS GitHub Actions job is configured for iOS type-checking; it has not run before publication. |
 | Store purchase/restore flow | Not run | Sample intentionally uses demo handlers and no store connection. Real products, legal destinations and entitlement verification belong to the host app. |
-| Behavioral model evaluations | Not run as independent sessions | Sixteen scenarios and rubrics are supplied. The Grove walkthrough is an authored reference example, not a benchmark result. |
+| Behavioral model evaluations | Not run as independent sessions | Seventeen scenarios and rubrics are supplied. The Grove walkthrough is an authored reference example, not a benchmark result. |
 | Linux/Windows CI | Configured, not run here | Workflow includes all three operating systems. Local success does not establish remote runner results. |
 
 ## Research update in 0.2.0
@@ -28,6 +28,20 @@ The skill, research references, evaluation fixtures, and documentation changed i
 | Authenticated Mobbin MCP | Not run | No connected Mobbin tools were available. The optional workflow documents discovery and access limits without simulated tool results. |
 | Two-step design | Rendered and visually inspected | Original `assets/two-step.svg` was rasterized and inspected for typography, table readability, billing text and bounds. It is a design specification, not a running two-step native implementation. |
 | Country purchase case | Awaiting evidence | Flags and a submission template are included. No app identity, production purchase records or skill attribution were supplied. |
+
+## Flutter update in 0.3.0
+
+Flutter 3.44.7 / Dart 3.12.2 were used from an isolated SDK/cache copy. Existing SwiftUI and Compose sources are unchanged. The Flutter demo adds an implemented two-step candidate; the original SVG remains a design illustration.
+
+| Check | Result | Evidence and limits |
+| --- | --- | --- |
+| Flutter format/analyzer | Passed | Formatted Dart sources; analyzer reports no issues. |
+| Flutter widget tests | Passed | Eight tests cover offer identity/back, duplicate purchase/restore, removed selected offer, empty/loading/error/retry, failure/disposal, system Back, 320px at 2× text, and demo close/reopen. |
+| Flutter web build | Passed | Release web output compiled locally. No native or billing result is inferred. |
+| Flutter visual review | Passed in browser | Both steps inspected at 390 × 844. Monthly selection, matching CTA/disclosure and demo result checked through browser semantics. Native screen readers remain untested. |
+| Flutter native iOS/Android build | Not run | Generated host projects are included; widget/web success does not prove native builds. |
+| Flutter device accessibility/store sandbox | Not run | No VoiceOver/TalkBack or real/sandbox billing integration. Demo callbacks only. |
+| Flutter CI | Configured, not run remotely | Pinned SDK, formatting, analysis, widget tests and web build. |
 
 ## Client compatibility
 
