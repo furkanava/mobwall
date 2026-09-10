@@ -52,6 +52,10 @@ The developer confirmed skill usage and purchases in seven Google Play Console m
 
 Binary availability now uses ✓/—, while actual limits remain text. The Flutter table and compact feature cards expose separate contextual semantics. All eight widget tests passed, including compact 2× text and the availability label. Dart analysis and package checks passed. The updated SVG illustration was rendered and visually inspected; the modified Flutter view was not rerun in a browser or native device this release.
 
+## Hero artwork refresh
+
+The README now uses `assets/preview-clean.png`, an AI-assisted edit of the original illustration. The after screen has a white background, lighter border, shorter heading and two concise benefits, while retaining the annual total and renewal disclosure. The generated image was visually inspected. `assets/preview.svg` and `assets/preview.png` remain the earlier design, not the editable source of the refreshed bitmap. No native UI or conversion result is implied.
+
 ## Client compatibility
 
 | Client | Discovery documentation checked | Installer file-copy tests | Actual client discovery + task execution |
