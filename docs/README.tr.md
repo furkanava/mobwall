@@ -1,50 +1,128 @@
+<div align="center">
+
 # Mobile Paywall
 
-Mobil uygulamalarda abonelik ekranı tasarlayan veya mevcut paywall'ı iyileştiren, ücretsiz ve MIT lisanslı açık kaynak skill.
+### Kod ajanına daha iyi bir paywall brief’i ver.
 
-**Claude Code, Codex, Cursor ve Antigravity** için ortak talimatlar içerir. Araca özel kurulum yolları resmi belgelerle kontrol edilmiştir; dört istemcide uçtan uca kullanım henüz doğrulanmamıştır.
+Yeni abonelik ekranı tasarla. Mevcut ekranı incele. Uygulamana uygula.
+
+**Claude Code · Codex · Cursor · Antigravity**
+
+[![MIT · Açık kaynak](../assets/badges/license.svg)](../LICENSE)
+[![Yerel kurulum · Hesap gerekmez](../assets/badges/install.svg)](installation.md)
+[![Swift · Kotlin · Dart](../assets/badges/platforms.svg)](#platformlar-ve-diller)
+
+[English](../README.md) · **Türkçe**
+
+[Kurulum](#kurulum) · [Örnekler](#platformlar-ve-diller) · [Doğrulama](validation.md) · [Vaka kaydı](country-case-study.md)
+
+</div>
+
+![Kurmaca önce/sonra tasarım çalışması: karmaşık paywall, değer karşılaştırması ve plan seçimi olarak iki ekrana ayrılıyor.](../assets/preview-skill.png)
+
+<p align="center"><sub>Bu görsel bir tasarım illüstrasyonudur; gerçek bir ajan çalışmasının ekran kaydı veya ölçülmüş dönüşüm sonucu değildir.</sub></p>
+
+## Ne yapar?
+
+| Girdi | Çıktı |
+| :--- | :--- |
+| Ekran görüntüsü | Görülebilen unsurlara dayalı analiz, önerilen metin ve yerleşim. |
+| Ürün brief’i | Ücretli değeri ve satın alma koşullarını açıklayan tasarım. |
+| Mevcut uygulama | Gerçek fiyatları, state management ve ödeme altyapısını koruyan arayüz değişiklikleri. |
+| Test sorusu | Sınanabilir hipotez, anlamlı ölçüm ve uygulanabilir kontroller. |
+
+**Skill, kod ajanının okuduğu talimat paketidir.** Bağımsız tasarım uygulaması veya ödeme SDK’sı değildir. Görsel üretimi, ajanın mevcut araçlarına bağlıdır. Gerçek ödeme ve erişim doğrulaması uygulamanın mevcut servisinde kalır.
 
 ## Kurulum
 
-Repoyu indirip klasöründe şu komutu çalıştır:
+Repoyu indir veya klonla. Repo kökünde çalıştır:
 
 ```sh
 python3 scripts/install.py --agent all --project "/uygulamanin/tam/yolu"
 ```
 
-Python 3.9+ gerekir; Windows'ta `python` kullanabilirsin. [Elle kurulum](installation.md) için Python gerekmez. Kurulum mevcut farklı skill dosyalarının üzerine yazmaz.
+Tek araç için `all` yerine `cursor`, `claude`, `codex` veya `antigravity` kullan. Hedef uygulama klasörü mevcut olmalı. Kurucu Python 3.9+ ister; Windows’ta gerekirse `python` kullan.
 
-Uygulama projesinde ajanına şunu söyle:
+| Araç | Projedeki konum | Kullanım |
+| :--- | :--- | :--- |
+| Claude Code | `.claude/skills/mobile-paywall/` | `/mobile-paywall` |
+| Codex | `.agents/skills/mobile-paywall/` | `$mobile-paywall` |
+| Cursor | `.agents/skills/mobile-paywall/` | Agent sohbetinde `/` menüsünden seç |
+| Antigravity | `.agents/skills/mobile-paywall/` | `mobile-paywall` skill’ini kullanmasını iste |
+
+Kurulumdan sonra ajanı hedef projenin içinde yeniden başlat. Kurucu ağ bağlantısı kurmaz; mevcut farklı sürümlerin üzerine yazmaz. Dört istemcide kapsamlı uçtan uca kullanım bağımsız doğrulanmış değildir.
+
+<details>
+<summary><strong>Elle kurulum ve güncelleme</strong></summary>
+
+[Skill klasörünün](../skills/mobile-paywall) tamamını, `references/` dahil, yukarıdaki hedefe kopyala. Son yol `mobile-paywall/SKILL.md` olmalı.
+
+Güncellerken eski skill klasörünü keşif klasörlerinin dışındaki bir yedek konuma taşı, ardından yeni sürümü kur. Aynı skill’i hem `.cursor/skills` hem `.agents/skills` altında tutma.
+
+[Ayrıntılı kurulum ve sorun giderme](installation.md)
+
+</details>
+
+## Dene
+
+Ekran görüntünü ekleyip önce analiz iste:
 
 ```text
-mobile-paywall skill'ini kullanarak mevcut paywall'ımı iyileştir.
-Önce ekranı ve uygulamanın tasarım dilini incele.
-Mevcut fiyatları ve satın alma altyapısını koruyarak tasarımı uygula.
-Neyi test ettiğini ve doğrulanamayan noktaları belirt.
+mobile-paywall skill’ini kullanarak mevcut paywall’ımı incele.
+İlgili skill referanslarını, ekranı ve kodu oku.
+Gerçek ürünleri, fiyatları ve deneme uygunluğunu koru.
+Önceliklendirilmiş bulgular ve somut tasarım önerisi ver. Şimdilik kod değiştirme.
 ```
 
-Yalnızca analiz istiyorsan bunu açıkça belirt; skill bu durumda kodu değiştirmez. Ekran görüntüsünden başlayabilir veya sıfırdan ürün brief'i verebilirsin.
+Sonra uygulamayı iste:
 
-## Referans araştırması ve iki ekranlı tasarım
+```text
+mobile-paywall ile öneriyi mevcut uygulamamda uygula.
+State management, navigation ve ödeme entegrasyonunu koru.
+Var/yok özelliklerinde ✓/—, sayısal limitlerde metin kullan.
+Ekran okuyucu açıklamalarını, geri yüklemeyi ve yenileme koşullarını koru.
+İlgili kontrolleri çalıştır; doğrulanmayan noktaları belirt.
+```
 
-Skill artık kapsamlı onboarding tasarımlarında önce kaynakları inceleyip tabloda karşılaştırır; ardından **değer/Ücretsiz–Plus karşılaştırması → planlar ve satın alma** şeklinde iki ekranlı bir aday sunar. Tek ekranlı kontrolü ve istisnaların gerekçesini belirtir. [Örnek akış](../examples/cases/grove-two-step.md) tasarım belirtimidir; mevcut native demolar hâlâ tek ekranlı kontroldür.
+## Platformlar ve diller
 
-[Araştırma kaydı](../skills/mobile-paywall/references/research.md), onboarding araştırmasının yöntemini ve sınırlarını açıklar. Referans araştırması, kullanıcının sağladığı ekranlar, mevcut kod ve erişilebilir web kaynaklarıyla yürütülür.
+| Platform | Kod dili | Örnek ve doğrulama |
+| :--- | :--- | :--- |
+| Flutter · iOS/Android hostları | Dart | [İki ekranlı demo](../examples/flutter/README.md): analiz, 8 widget testi; kayıtlı sürümlerde web derlemesi ve tarayıcı kontrolü. |
+| Android · Jetpack Compose | Kotlin | [Native demo](../examples/android/README.md): debug APK derlendi. |
+| iOS · SwiftUI | Swift | [Örnek ekran](../examples/swiftui/README.md): macOS tip kontrolü ve önizleme; yerelde iOS derlemesi yapılmadı. |
+| React Native | JavaScript / TypeScript | [Entegrasyon rehberi](../skills/mobile-paywall/references/implementation.md); hazır proje ve platform testi yok. |
 
-Geliştiricinin bildirimine göre, Mobile Paywall kullanılan bir Android uygulaması Google Play Console’da yedi pazardan uygulama içi satın alma aldı. [Ülke bazlı vaka kaydı](country-case-study.md), SVG bayrakları ve kanıt durumunu içerir. Console kayıtları bu repo için bağımsız incelenmedi; dönüşüm artışı iddiası yoktur.
+**Dokümantasyon:** İngilizce ve Türkçe. **Demo arayüzleri:** İngilizce. Skill, ürünün istenen dilini ve mevcut yerelleştirme dosyalarını takip eder; tüm diller için hazır veya test edilmiş çeviri paketi sunmaz.
 
-## İçerik
+## Tasarım yaklaşımı
 
-- Sıfırdan tasarım, mevcut ekran analizi ve projede uygulama akışı.
-- Fiyat/deneme açıklığı, görsel hiyerarşi, erişilebilirlik ve hata durumları.
-- SwiftUI, Kotlin/Jetpack Compose, Flutter ve React Native için uygulama rehberi.
-- Gerçek ödeme yapmayan [SwiftUI örnek ekranı](../examples/swiftui/README.md) ve [Android Compose demo projesi](../examples/android/README.md).
-- Üç kurmaca ürün senaryosu, davranış değerlendirmeleri ve kurulum testleri.
+Kapsamlı onboarding çalışmasında **değer ve Ücretsiz/Plus karşılaştırması → teklif ve satın alma** adımlarını değerlendirir. Var/yok özelliklerinde ✓/—, gerçek limitlerde metin kullanır; ekran okuyucuya anlamlı açıklama verir.
 
-Skill ücretsizdir; kullandığın AI aracının kendi kullanım ücretleri olabilir. Zorunlu ücretli servis, hesap, telemetri veya lisans anahtarı yoktur. Ölçülmemiş dönüşüm artışı ve mağaza onayı vaat etmez.
+Küçük değişikliği tam yeniden tasarıma dönüştürmez. Kullanıcı değeri zaten biliyorsa fazladan ekran zorunlu değildir. İki ekran ve karşılaştırma tablosu test edilecek tasarım seçenekleridir.
 
-[Ana sayfa](../README.md) · [Doğrulama durumu](validation.md) · [MIT lisansı](../LICENSE)
+[İki ekranlı tasarım](../examples/cases/grove-two-step.md) · [Kaynaklar](../skills/mobile-paywall/references/research.md)
 
-## Flutter örneği
+## Bildirilen üretim kullanımı
 
-[Flutter demosu](../examples/flutter/README.md), değer/Free–Plus karşılaştırması → teklif şeklindeki iki ekranlı akışı uygular. iOS/Android hostları ve web önizlemesi bulunur. Plan seçimi geri dönüşte korunur; ödeme ve geri yükleme işlevleri dışarıdan bağlanır. Demo gerçek ödeme yapmaz. [Flutter rehberi](../skills/mobile-paywall/references/flutter.md), mevcut state management, navigation ve billing yapısını koruyarak entegrasyonu açıklar.
+Geliştirici, bu skill kullanılan Android uygulamasının Google Play Console’da yedi ülkeden uygulama içi satın alma aldığını bildirdi.
+
+| ABD | Birleşik Krallık | Hindistan | Türkiye |
+| :---: | :---: | :---: | :---: |
+| ![ABD](../assets/flags/us.svg) | ![Birleşik Krallık](../assets/flags/gb.svg) | ![Hindistan](../assets/flags/in.svg) | ![Türkiye](../assets/flags/tr.svg) |
+
+| Kazakistan | Finlandiya | Belçika |
+| :---: | :---: | :---: |
+| ![Kazakistan](../assets/flags/kz.svg) | ![Finlandiya](../assets/flags/fi.svg) | ![Belçika](../assets/flags/be.svg) |
+
+[Vaka kaydı](country-case-study.md). Console kayıtları bu repo için bağımsız incelenmedi; bu bildirim dönüşüm artışını kanıtlamaz.
+
+## Doğrulama ve lisans
+
+**15 kurulum testi · 8 Flutter widget testi · 16 yazılmış değerlendirme senaryosu.** Senaryolar, bağımsız tamamlanmış 16 ajan çalışması değildir. Paylaşılan bir Cursor analiz çıktısı bulunur; bu kapsamlı uyumluluk testi sayılmaz.
+
+[Sürüm ve test ayrıntıları](validation.md) · [Katkı rehberi](../CONTRIBUTING.md)
+
+Özgün proje içeriği **[MIT lisanslıdır](../LICENSE)**; ticari kullanım da mümkündür. Hesap, lisans anahtarı, telemetri ve zorunlu harici bağlantı yoktur. AI sağlayıcısının kendi kullanım ücretleri olabilir. Demo ödeme işlemleri gerçekte para çekmez.
+
+[Gradle](../examples/android/gradle/README.md), [Flutter](../examples/flutter/FLUTTER_LICENSE) ve [bayraklar](../assets/flags/README.md) kendi lisans bildirimlerini korur.

@@ -1,6 +1,6 @@
 # Validation record
 
-Release candidate: **0.3.3**, checked **2026-09-10**. This record states what was exercised locally. CI configuration and behavioral rubrics are not completed runs.
+Release candidate: **0.4.0**, checked **2026-09-10**. This record states what was exercised locally. CI configuration and behavioral rubrics are not completed runs.
 
 | Check | Result | Evidence and limits |
 | --- | --- | --- |
@@ -52,9 +52,15 @@ The developer confirmed skill usage and purchases in seven Google Play Console m
 
 Binary availability now uses ✓/—, while actual limits remain text. The Flutter table and compact feature cards expose separate contextual semantics. All eight widget tests passed, including compact 2× text and the availability label. Dart analysis and package checks passed. The updated SVG illustration was rendered and visually inspected; the modified Flutter view was not rerun in a browser or native device this release.
 
-## Hero artwork refresh
+## Launch documentation in 0.4.0
 
-The README uses `assets/preview-visual.png`, an AI-assisted illustration comparing offer-first and visual-first approaches, not a measured before/after improvement. The visual-first candidate includes a static forest image, concise benefit text, real-to-the-brief demo totals and renewal disclosure. The generated graphic was visually inspected. Earlier SVG/PNG artwork remains separate; it is not the editable source of this bitmap. The artwork has no playback controls and does not claim video generation or an implemented media player.
+English and Turkish READMEs now share an installation guide, framework/code-language table, documentation-language links, scoped examples and evidence status. Local SVG badges and consistent 32 × 24 flags require no external image service. Flag reuse elements were expanded to inline shapes, and US stars use explicit polygons for renderer compatibility.
+
+The README uses `assets/preview-skill.png`, an AI-assisted fictional illustration contrasting a cluttered screen with a two-step value comparison and offer. It was visually inspected. It is not an actual agent-run before/after, a runtime screenshot or a measured conversion improvement. It contains no forest or media player. Original SVG/PNG artwork is separate and is not the editable source of this bitmap. Rejected bitmap variants were removed from the current package.
+
+Application and skill instructions are unchanged in this documentation release; previously recorded native and Flutter results retain their original limits.
+
+Repository checks and all 15 installer tests passed. The release ZIP was extracted to a fresh temporary directory, its package checks passed, and installation into an empty app folder produced byte-identical skill files in both discovery destinations. All seven flags and three badges parsed as SVG; flag dimensions and absence of reuse/marker elements were checked. A raster contact sheet was visually inspected. Full README rendering on GitHub has not been checked before publication.
 
 ## Client compatibility
 
