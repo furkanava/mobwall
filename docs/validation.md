@@ -54,7 +54,7 @@ Binary availability now uses ✓/—, while actual limits remain text. The Flutt
 
 ## Hero artwork refresh
 
-The README now uses `assets/preview-clean.png`, an AI-assisted edit of the original illustration. The after screen has a white background, lighter border, shorter heading and two concise benefits, while retaining the annual total and renewal disclosure. The generated image was visually inspected. `assets/preview.svg` and `assets/preview.png` remain the earlier design, not the editable source of the refreshed bitmap. No native UI or conversion result is implied.
+The README uses `assets/preview-product.png`, an AI-assisted illustration comparing offer-first and product-first approaches, not a measured before/after improvement. The product-first candidate includes a fictional meditation-player preview, concise benefit text, real-to-the-brief demo totals and renewal disclosure. The generated graphic was visually inspected. Earlier SVG/PNG artwork remains separate; it is not the editable source of this bitmap. The player is an illustration, not an implemented sample feature or actual app capture.
 
 ## Client compatibility
 

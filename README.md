@@ -4,7 +4,7 @@
 
 A free, MIT-licensed agent skill for **Claude Code, Codex, Cursor, and Antigravity**. Create a mobile subscription screen from a brief or improve one from screenshots and source code.
 
-![Fictional Grove paywall before and after: generic premium offer becomes an outcome-led screen with clear annual billing. This is an illustrative design study, not measured conversion evidence.](assets/preview-clean.png)
+![Two fictional Grove paywall approaches: offer-first and product-first with an illustrative meditation player preview. Neither is a measured winner.](assets/preview-product.png)
 
 *Original fictional design study. Illustrations are not screenshots of a running app. No conversion or revenue uplift is claimed.*
 
