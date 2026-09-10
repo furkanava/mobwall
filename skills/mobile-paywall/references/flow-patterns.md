@@ -30,7 +30,7 @@ Include a compact table in the candidate when the free/paid boundary or tier dif
 
 Begin with two relevant billing choices when the catalog supports that simplicity. Keep other real plans discoverable through a clear “All plans” route if appropriate. Never hide a materially different option solely to make an expensive plan look compulsory. Selection defaults and trial durations come from the product strategy and eligibility, not a rule that annual always wins.
 
-Use cancellation reassurance only when the wording accurately describes the offer; “cancel anytime” does not promise a prorated refund or immediate termination. A trial timeline may show a reminder only when its actual channel, timing and required permissions are implemented. Treat CTA icons and animation as design hypotheses, not independently measured lift.
+Use cancellation reassurance only when the wording accurately describes the offer; “cancel anytime” does not promise a prorated refund or immediate termination. A trial timeline may show a reminder only when its actual channel, timing and required permissions are implemented.
 
 ## Measurement
 

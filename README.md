@@ -57,9 +57,8 @@ For substantial onboarding work, the skill now researches references first, retu
 
 [Read the worked two-screen specification](examples/cases/grove-two-step.md). The SwiftUI and Compose samples remain the single-screen control. The [Flutter demo](examples/flutter/README.md) implements the two-step candidate with injected demo callbacks.
 
-The [source ledger](skills/mobile-paywall/references/research.md) covers the two Mobbin videos, timestamped recommendations and Superwall's onboarding methodology. A large design library is not a conversion experiment. Tables and multi-screen flows are concrete patterns to test, not promises of uplift.
+The [source ledger](skills/mobile-paywall/references/research.md) covers Superwall's onboarding methodology and distinguishes observations from causal evidence. Tables and multi-screen flows are concrete patterns to test, not promises of uplift.
 
-**Optional Mobbin MCP:** use a connected account to inspect relevant screens and full flows, then explain what to adopt and why. [Setup and workflow](docs/mobbin.md). Mobbin is a separate paid service; it is not required by this free skill. Missing access falls back to accessible references without invented search results.
 
 ## Decisions, not a universal template
 
@@ -74,7 +73,7 @@ No invented testimonials, fake urgency, hidden fees, or promises of conversion u
 
 ## Free and open source
 
-All original skill instructions, references, examples, and utilities are included under [MIT](LICENSE). The Android Gradle wrapper retains its [upstream license](examples/android/gradle/README.md); generated Flutter scaffolding retains the [Flutter license](examples/flutter/FLUTTER_LICENSE). There is no license key, required account, telemetry, mandatory MCP server, or paid edition. Your chosen AI provider may charge for its own usage. Screenshots and code you give your agent remain subject to that provider's handling; this repository adds no upload service.
+All original skill instructions, references, examples, and utilities are included under [MIT](LICENSE). The Android Gradle wrapper retains its [upstream license](examples/android/gradle/README.md); generated Flutter scaffolding retains the [Flutter license](examples/flutter/FLUTTER_LICENSE). There is no license key, required account, telemetry, mandatory external connector, or paid edition. Your chosen AI provider may charge for its own usage. Screenshots and code you give your agent remain subject to that provider's handling; this repository adds no upload service.
 
 The installer only copies local skill files into your chosen project. It makes no network calls, changes no global settings, and refuses to overwrite a different existing skill.
 

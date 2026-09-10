@@ -1,18 +1,15 @@
 # Grove: two-screen onboarding candidate
 
-Original design specification based on [the fictional Grove brief](grove.md). No real purchases, measured uplift, Mobbin screenshots, or new entitlements are claimed. The native SwiftUI/Android samples remain the one-screen control; this document specifies the two-screen candidate now implemented in the Flutter demo.
+Original design specification based on [the fictional Grove brief](grove.md). No real purchases, measured uplift, or new entitlements are claimed. The native SwiftUI/Android samples remain the one-screen control; this document specifies the two-screen candidate now implemented in the Flutter demo.
 
-## Research comparison
+## Design comparison
 
-These examples are **described in the linked source**, not fetched through Mobbin MCP or directly inspected in the live apps during this release.
+Compare the existing sample and the proposed candidate using the same fictional product brief. These are authored design alternatives, not observations of third-party apps.
 
-| Source example | Context | Pattern | What to adapt for Grove | What not to assume |
-| --- | --- | --- | --- | --- |
-| [Opal, video at 1:25](https://www.youtube.com/watch?v=9ypqs_2fAl8&t=85s) | Pre-offer journey | Explain the outcome before the price. | Connect the library to a usable daily routine. | Do not copy its quantified time-saving promise or treat its reported result as Grove's result. |
-| [Ahead, video at 2:19](https://www.youtube.com/watch?v=9ypqs_2fAl8&t=139s) | Multi-page offer | Reveal information in purposeful steps. | Separate value/comparison from purchase. | Two pages alone do not establish effectiveness. |
-| [Blinkist, video at 3:08](https://www.youtube.com/watch?v=9ypqs_2fAl8&t=188s) | Trial explanation | Clarify what happens and when billing begins. | Keep billing expectations explicit. | Grove has no trial; do not invent one or promise a reminder. |
-
-The [research ledger](../../skills/mobile-paywall/references/research.md) covers evidence strength. A future connected Mobbin run should replace or supplement these rows with actual screen/flow links and inspection notes.
+| Candidate | Purpose | Tradeoff | Evidence |
+| --- | --- | --- | --- |
+| Existing one-screen offer | Present value and plans in one place. | Less navigation, but benefits and offer compete for attention. | [Grove brief](grove.md) and the supplied SwiftUI/Compose examples; no conversion result. |
+| Value/comparison → offer | Explain actual Free/Plus differences before asking for payment. | Adds a step that could lose users or duplicate onboarding. | Original design hypothesis; [onboarding research](../../skills/mobile-paywall/references/research.md) supports testing rather than assuming uplift. |
 
 ## Screen 1 — value and comparison
 

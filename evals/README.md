@@ -1,6 +1,6 @@
 # Behavioral evaluation
 
-[cases.json](cases.json) contains seventeen realistic scenarios and observable criteria. These are evaluation inputs, not a claim that seventeen model runs passed. The [Grove worked example](../examples/cases/grove-result.md) is an authored reference, not an independent evaluation.
+[cases.json](cases.json) contains sixteen realistic scenarios and observable criteria. These are evaluation inputs, not a claim that sixteen model runs passed. The [Grove worked example](../examples/cases/grove-result.md) is an authored reference, not an independent evaluation.
 
 ## Run a case
 

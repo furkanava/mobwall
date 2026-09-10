@@ -23,11 +23,11 @@ Inspect supplied artifacts and relevant project files first. Identify the produc
 
 Ask only for missing facts that change the offer or block implementation. If prices or trial terms are unknown, continue with a labeled design draft and visible placeholders. Do not invent production offers, product IDs, testimonials, legal URLs, discounts, or performance data. Screenshot-only work cannot establish runtime behavior, accessibility semantics, or actual conversion rates; mark these as unknown.
 
-Use existing screenshot/image tools if available. If an image cannot be inspected, say so and request an accessible artifact or text; never claim to have seen it. Work with available tools without requiring an account, paid service, or a particular MCP provider.
+Use existing screenshot/image tools if available. If an image cannot be inspected, say so and request an accessible artifact or text; never claim to have seen it. Work with available tools without requiring an account, paid service, or a particular external provider.
 
 ## Research and compare before a substantial design
 
-For a new paywall or substantial redesign, read [research.md](references/research.md) and inspect relevant references before choosing a structure. If Mobbin is requested or available, read [mobbin.md](references/mobbin.md). Return a concise source-linked comparison table covering context, step purposes, feature comparison, offer clarity, and tradeoffs. Distinguish actually inspected screens from source-described examples; do not claim the full library was analyzed. If reference access is unavailable, state the limit and continue with the brief. Skip this research expansion for a narrow requested fix.
+For a new paywall or substantial redesign, read [research.md](references/research.md) and inspect relevant references before choosing a structure. Return a concise source-linked comparison table covering context, step purposes, feature comparison, offer clarity, and tradeoffs. Distinguish actually inspected screens from source-described examples; only claim inspection of references actually reviewed. If reference access is unavailable, state the limit and continue with the brief. Skip this research expansion for a narrow requested fix.
 
 ## Make and explain the decision
 

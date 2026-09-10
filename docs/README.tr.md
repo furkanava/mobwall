@@ -29,7 +29,7 @@ Yalnızca analiz istiyorsan bunu açıkça belirt; skill bu durumda kodu değiş
 
 Skill artık kapsamlı onboarding tasarımlarında önce kaynakları inceleyip tabloda karşılaştırır; ardından **değer/Ücretsiz–Plus karşılaştırması → planlar ve satın alma** şeklinde iki ekranlı bir aday sunar. Tek ekranlı kontrolü ve istisnaların gerekçesini belirtir. [Örnek akış](../examples/cases/grove-two-step.md) tasarım belirtimidir; mevcut native demolar hâlâ tek ekranlı kontroldür.
 
-[Mobbin MCP isteğe bağlıdır](mobbin.md) ve kendi ücretli planına tabidir. [Araştırma kaydı](../skills/mobile-paywall/references/research.md), video zaman damgalarını, kütüphane sayısıyla deney örneklemi arasındaki farkı ve araştırmaların sınırlarını açıklar.
+[Araştırma kaydı](../skills/mobile-paywall/references/research.md), onboarding araştırmasının yöntemini ve sınırlarını açıklar. Referans araştırması, kullanıcının sağladığı ekranlar, mevcut kod ve erişilebilir web kaynaklarıyla yürütülür.
 
 [Bayraklı ülke vaka şablonu](country-case-study.md): 🇺🇸 🇬🇧 🇮🇳 🇹🇷 🇰🇿 🇫🇮 🇧🇪. Uygulama ve gerçek satın alma verileri henüz sağlanmadığı için doğrulanmış başarı iddiası olarak sunulmaz.
 
