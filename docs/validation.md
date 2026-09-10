@@ -54,7 +54,7 @@ Binary availability now uses ✓/—, while actual limits remain text. The Flutt
 
 ## Hero artwork refresh
 
-The README uses `assets/preview-product.png`, an AI-assisted illustration comparing offer-first and product-first approaches, not a measured before/after improvement. The product-first candidate includes a fictional meditation-player preview, concise benefit text, real-to-the-brief demo totals and renewal disclosure. The generated graphic was visually inspected. Earlier SVG/PNG artwork remains separate; it is not the editable source of this bitmap. The player is an illustration, not an implemented sample feature or actual app capture.
+The README uses `assets/preview-visual.png`, an AI-assisted illustration comparing offer-first and visual-first approaches, not a measured before/after improvement. The visual-first candidate includes a static forest image, concise benefit text, real-to-the-brief demo totals and renewal disclosure. The generated graphic was visually inspected. Earlier SVG/PNG artwork remains separate; it is not the editable source of this bitmap. The artwork has no playback controls and does not claim video generation or an implemented media player.
 
 ## Client compatibility
 
