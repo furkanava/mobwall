@@ -1,6 +1,6 @@
 # Validation record
 
-Release candidate: **0.4.0**, checked **2026-09-10**. This record states what was exercised locally. CI configuration and behavioral rubrics are not completed runs.
+Release candidate: **0.4.1**, checked **2026-09-10**. This record states what was exercised locally. CI configuration and behavioral rubrics are not completed runs.
 
 | Check | Result | Evidence and limits |
 | --- | --- | --- |
@@ -61,6 +61,14 @@ The README uses `assets/preview-skill.png`, an AI-assisted fictional illustratio
 Application and skill instructions are unchanged in this documentation release; previously recorded native and Flutter results retain their original limits.
 
 Repository checks and all 15 installer tests passed. The release ZIP was extracted to a fresh temporary directory, its package checks passed, and installation into an empty app folder produced byte-identical skill files in both discovery destinations. All seven flags and three badges parsed as SVG; flag dimensions and absence of reuse/marker elements were checked. A raster contact sheet was visually inspected. Full README rendering on GitHub has not been checked before publication.
+
+## Mobwall rename in 0.4.1
+
+The project, canonical skill folder, frontmatter name, installer destinations, invocation examples, fixtures and demo package identifiers now use Mobwall / `mobwall`. Both documentation languages and the separate launch copy were updated. Earlier-name references remain only in migration instructions. Demo product content still uses the fictional Grove brand.
+
+The built-in image tool changed the hero's top-left brand text to “Mobwall”, with the prompt to preserve the three screens, other copy, prices, disclosure and composition. The resulting `assets/preview-skill.png` was visually inspected. Editable SVG branding was updated and its corresponding PNG regenerated. These remain illustrations, not new runtime or conversion evidence.
+
+The skill validator, repository checks, 15 installer tests and fresh ZIP installation passed under the new name. Flutter dependencies were refreshed offline; analysis and all eight widget tests passed with the renamed Dart package. The native Compose debug APK rebuilt successfully with `dev.mobwall.demo`; sandbox restrictions on the Kotlin daemon triggered its successful non-daemon compilation fallback. Flutter iOS property-list/project syntax checks passed, but no native Flutter or iOS build was performed for the rename. Earlier runtime limitations still apply.
 
 ## Client compatibility
 

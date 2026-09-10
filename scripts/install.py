@@ -6,7 +6,7 @@ from pathlib import Path
 import shutil
 import sys
 
-NAME = "mobile-paywall"
+NAME = "mobwall"
 SOURCE = Path(__file__).resolve().parents[1] / "skills" / NAME
 # The shared location avoids duplicate discovery in Cursor and Antigravity.
 ROOTS = {"claude": ".claude", "codex": ".agents", "cursor": ".agents", "antigravity": ".agents"}

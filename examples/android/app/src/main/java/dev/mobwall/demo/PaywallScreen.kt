@@ -1,4 +1,4 @@
-package dev.mobilepaywall.demo
+package dev.mobwall.demo
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.*

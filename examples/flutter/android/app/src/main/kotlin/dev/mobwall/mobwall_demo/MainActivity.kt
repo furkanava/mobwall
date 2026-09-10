@@ -1,4 +1,4 @@
-package dev.mobilepaywall.mobile_paywall_demo
+package dev.mobwall.mobwall_demo
 
 import io.flutter.embedding.android.FlutterActivity
 

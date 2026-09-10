@@ -24,7 +24,7 @@ flutter build web
 
 ## Integrate
 
-Copy [paywall_flow.dart](lib/paywall_flow.dart) into your existing app and adapt its Grove-specific content, theme and localization. [main.dart](lib/main.dart) is the mock host, not a purchase service. The skill's [Flutter reference](../../skills/mobile-paywall/references/flutter.md) covers the integration decisions.
+Copy [paywall_flow.dart](lib/paywall_flow.dart) into your existing app and adapt its Grove-specific content, theme and localization. [main.dart](lib/main.dart) is the mock host, not a purchase service. The skill's [Flutter reference](../../skills/mobwall/references/flutter.md) covers the integration decisions.
 
 - Supply real `PaywallOffer` values with a unique full offer ID, store-localized price and matching disclosure/CTA. Map that ID to the product/base plan/offer expected by the existing billing adapter. Duplicate IDs are invalid input. If the selected offer disappears, purchase is disabled until a valid plan is chosen. Offers loaded after an initially empty list require explicit selection.
 - Supply `onPurchase`, `onRestore`, retry, dismissal and real legal handlers. The callbacks return `Future<void>` only to manage UI activity; they do not certify entitlement. Service-level guards remain necessary across routes.

@@ -18,7 +18,7 @@ On Windows use `gradlew.bat`. Run the `app` configuration on an emulator/device 
 
 ## Use in an existing app
 
-Copy [PaywallScreen.kt](app/src/main/java/dev/mobilepaywall/demo/PaywallScreen.kt) and adapt the strings from [strings.xml](app/src/main/res/values/strings.xml). Supply your app's Material theme and brand content. The [demo activity](app/src/main/java/dev/mobilepaywall/demo/MainActivity.kt) shows the state/callback contract; it is not a production purchase service.
+Copy [PaywallScreen.kt](app/src/main/java/dev/mobwall/demo/PaywallScreen.kt) and adapt the strings from [strings.xml](app/src/main/res/values/strings.xml). Supply your app's Material theme and brand content. The [demo activity](app/src/main/java/dev/mobwall/demo/MainActivity.kt) shows the state/callback contract; it is not a production purchase service.
 
 - Replace demo prices with localized product/offer data. Keep the billed total, pricing phase, eligibility-aware CTA, and disclosure consistent.
 - Use unique offer identities that map to product, base plan, and offer token in your existing billing service. Never select a checkout offer using the display title alone.
@@ -27,7 +27,7 @@ Copy [PaywallScreen.kt](app/src/main/java/dev/mobilepaywall/demo/PaywallScreen.k
 - Query existing purchases/entitlements for restore and application resume. Connect legal controls to your real published URLs and route already subscribed users appropriately.
 - Localize all resources and real offer data. The supplied English strings and USD prices are fictional; the example has no trial.
 
-See the [native Android skill reference](../../skills/mobile-paywall/references/android.md) and [official Google Play guide](https://developer.android.com/google/play/billing/integrate).
+See the [native Android skill reference](../../skills/mobwall/references/android.md) and [official Google Play guide](https://developer.android.com/google/play/billing/integrate).
 
 ## Verify
 

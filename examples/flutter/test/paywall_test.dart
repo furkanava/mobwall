@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mobile_paywall_demo/main.dart';
-import 'package:mobile_paywall_demo/paywall_flow.dart';
+import 'package:mobwall_demo/main.dart';
+import 'package:mobwall_demo/paywall_flow.dart';
 
 Widget host({
   List<PaywallOffer> offers = demoOffers,

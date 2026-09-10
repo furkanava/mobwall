@@ -1,8 +1,8 @@
 <div align="center">
 
-# Mobile Paywall
+# Mobwall
 
-### Give your coding agent a better paywall brief.
+### Better mobile paywalls, inside your coding agent.
 
 Design a new subscription screen. Audit an existing one. Implement it in your app.
 
@@ -45,21 +45,23 @@ Choose `cursor`, `claude`, `codex` or `antigravity` instead of `all` to install 
 
 | Agent | Installed location in your app | Invoke |
 | :--- | :--- | :--- |
-| Claude Code | `.claude/skills/mobile-paywall/` | `/mobile-paywall` |
-| Codex | `.agents/skills/mobile-paywall/` | `$mobile-paywall` |
-| Cursor | `.agents/skills/mobile-paywall/` | Select `mobile-paywall` from `/` in Agent chat |
-| Antigravity | `.agents/skills/mobile-paywall/` | Ask to use the `mobile-paywall` skill |
+| Claude Code | `.claude/skills/mobwall/` | `/mobwall` |
+| Codex | `.agents/skills/mobwall/` | `$mobwall` |
+| Cursor | `.agents/skills/mobwall/` | Select `mobwall` from `/` in Agent chat |
+| Antigravity | `.agents/skills/mobwall/` | Ask to use the `mobwall` skill |
 
 Restart the agent in your app after installing. The installer copies local files, makes no network calls and preserves different/customized existing copies. Discovery paths are documented; full task execution in all four clients has not been independently verified.
 
 <details>
 <summary><strong>No Python? Install manually · Updating an older copy?</strong></summary>
 
-Copy the entire [mobile-paywall skill folder](skills/mobile-paywall), including `references/`, into the destination above. The resulting path must end in `mobile-paywall/SKILL.md`.
+Copy the entire [mobwall skill folder](skills/mobwall), including `references/`, into the destination above. The resulting path must end in `mobwall/SKILL.md`.
 
 For an update, move your previous skill folder to a backup location outside all skill-discovery directories, then install the new copy. The installer intentionally refuses to overwrite a different version. Avoid duplicate copies in `.cursor/skills` and `.agents/skills`.
 
 [Full installation and troubleshooting](docs/installation.md)
+
+Installed the earlier `mobile-paywall` release? Follow the [rename migration](docs/installation.md#rename-migration) to avoid duplicate skill discovery.
 
 </details>
 
@@ -68,7 +70,7 @@ For an update, move your previous skill folder to a backup location outside all 
 **Audit first:** attach your screenshot and send this in your app project.
 
 ```text
-Use mobile-paywall to audit my current paywall.
+Use mobwall to audit my current paywall.
 Read the relevant skill references and inspect my screen and code.
 Keep actual products, prices and trial eligibility.
 Give me prioritized findings and a concrete redesign. Do not change code yet.
@@ -77,7 +79,7 @@ Give me prioritized findings and a concrete redesign. Do not change code yet.
 **Then implement:**
 
 ```text
-Use mobile-paywall to implement the proposed design in this app.
+Use mobwall to implement the proposed design in this app.
 Preserve my state management, navigation and billing integration.
 Use ✓/— for included/not-included features and text for numeric limits.
 Keep screen-reader labels, restore, dismissal and renewal terms clear.
@@ -93,7 +95,7 @@ No app yet? Open one of the examples below, or provide a brief with audience, fr
 | **Flutter** · iOS / Android hosts | Dart | [Two-step paywall](examples/flutter/README.md) | Analysis, 8 widget tests; web build and browser review on recorded revisions |
 | **Android** · Jetpack Compose | Kotlin | [Native demo](examples/android/README.md) | Debug APK build |
 | **iOS** · SwiftUI | Swift | [Native screen](examples/swiftui/README.md) | macOS type-check and hosted preview; iOS build not run locally |
-| React Native | JavaScript / TypeScript | [Integration guidance](skills/mobile-paywall/references/implementation.md) | No bundled app or platform test |
+| React Native | JavaScript / TypeScript | [Integration guidance](skills/mobwall/references/implementation.md) | No bundled app or platform test |
 
 **Documentation:** English and [Türkçe](docs/README.tr.md). **Demo UI:** English. The skill follows the requested product locale and existing localization files; translated production interfaces are not bundled or certified for every locale.
 
@@ -110,7 +112,7 @@ For broad onboarding design, include a purposeful two-screen candidate alongside
 
 A narrow copy fix stays narrow. A high-intent feature gate does not automatically need another page. The table and extra screen are design choices to test, not guaranteed improvements.
 
-[Worked design](examples/cases/grove-two-step.md) · [Source ledger](skills/mobile-paywall/references/research.md) · [All example briefs](examples/cases/README.md)
+[Worked design](examples/cases/grove-two-step.md) · [Source ledger](skills/mobwall/references/research.md) · [All example briefs](examples/cases/README.md)
 
 ## Reported in production
 

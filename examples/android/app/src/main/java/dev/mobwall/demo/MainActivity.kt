@@ -1,4 +1,4 @@
-package dev.mobilepaywall.demo
+package dev.mobwall.demo
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

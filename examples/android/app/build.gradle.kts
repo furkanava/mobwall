@@ -3,10 +3,10 @@ plugins {
     id("org.jetbrains.kotlin.plugin.compose")
 }
 android {
-    namespace = "dev.mobilepaywall.demo"
+    namespace = "dev.mobwall.demo"
     compileSdk = 36
     defaultConfig {
-        applicationId = "dev.mobilepaywall.demo"
+        applicationId = "dev.mobwall.demo"
         minSdk = 23
         targetSdk = 36
         versionCode = 1

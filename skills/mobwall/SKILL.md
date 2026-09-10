@@ -1,10 +1,10 @@
 ---
-name: mobile-paywall
+name: mobwall
 description: Design mobile app subscription paywalls or audit and improve an existing paywall from screenshots or source code. Use for paywall layout, subscription offer copy, plan selection, and implementation in mobile apps. Does not bypass paywalls or handle general website pricing pages.
 license: MIT
 ---
 
-# Mobile Paywall
+# Mobwall
 
 Turn a product brief, screenshot, or existing mobile screen into a clear subscription offer and a usable design. When implementation is requested, carry the design into the existing app. Optimize for informed purchase decisions; treat conversion improvements as hypotheses until measured.
 

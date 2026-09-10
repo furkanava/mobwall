@@ -4,7 +4,7 @@ Useful contributions improve a decision or make a real workflow more reliable: a
 
 ## Work locally
 
-Edit the canonical skill in `skills/mobile-paywall/`; installer destinations are generated copies, not additional sources of truth. Keep `SKILL.md` concise and link conditional guidance from `references/`. Do not introduce required paid services, telemetry, provider credentials, or agent-specific shell execution.
+Edit the canonical skill in `skills/mobwall/`; installer destinations are generated copies, not additional sources of truth. Keep `SKILL.md` concise and link conditional guidance from `references/`. Do not introduce required paid services, telemetry, provider credentials, or agent-specific shell execution.
 
 Run:
 

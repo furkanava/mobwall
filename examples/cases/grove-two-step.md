@@ -9,7 +9,7 @@ Compare the existing sample and the proposed candidate using the same fictional 
 | Candidate | Purpose | Tradeoff | Evidence |
 | --- | --- | --- | --- |
 | Existing one-screen offer | Present value and plans in one place. | Less navigation, but benefits and offer compete for attention. | [Grove brief](grove.md) and the supplied SwiftUI/Compose examples; no conversion result. |
-| Value/comparison → offer | Explain actual Free/Plus differences before asking for payment. | Adds a step that could lose users or duplicate onboarding. | Original design hypothesis; [onboarding research](../../skills/mobile-paywall/references/research.md) supports testing rather than assuming uplift. |
+| Value/comparison → offer | Explain actual Free/Plus differences before asking for payment. | Adds a step that could lose users or duplicate onboarding. | Original design hypothesis; [onboarding research](../../skills/mobwall/references/research.md) supports testing rather than assuming uplift. |
 
 ## Screen 1 — value and comparison
 

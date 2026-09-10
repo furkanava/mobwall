@@ -1,8 +1,8 @@
 <div align="center">
 
-# Mobile Paywall
+# Mobwall
 
-### Kod ajanına daha iyi bir paywall brief’i ver.
+### Kod ajanının içinde, daha iyi mobil paywall’lar.
 
 Yeni abonelik ekranı tasarla. Mevcut ekranı incele. Uygulamana uygula.
 
@@ -45,21 +45,23 @@ Tek araç için `all` yerine `cursor`, `claude`, `codex` veya `antigravity` kull
 
 | Araç | Projedeki konum | Kullanım |
 | :--- | :--- | :--- |
-| Claude Code | `.claude/skills/mobile-paywall/` | `/mobile-paywall` |
-| Codex | `.agents/skills/mobile-paywall/` | `$mobile-paywall` |
-| Cursor | `.agents/skills/mobile-paywall/` | Agent sohbetinde `/` menüsünden seç |
-| Antigravity | `.agents/skills/mobile-paywall/` | `mobile-paywall` skill’ini kullanmasını iste |
+| Claude Code | `.claude/skills/mobwall/` | `/mobwall` |
+| Codex | `.agents/skills/mobwall/` | `$mobwall` |
+| Cursor | `.agents/skills/mobwall/` | Agent sohbetinde `/` menüsünden seç |
+| Antigravity | `.agents/skills/mobwall/` | `mobwall` skill’ini kullanmasını iste |
 
 Kurulumdan sonra ajanı hedef projenin içinde yeniden başlat. Kurucu ağ bağlantısı kurmaz; mevcut farklı sürümlerin üzerine yazmaz. Dört istemcide kapsamlı uçtan uca kullanım bağımsız doğrulanmış değildir.
 
 <details>
 <summary><strong>Elle kurulum ve güncelleme</strong></summary>
 
-[Skill klasörünün](../skills/mobile-paywall) tamamını, `references/` dahil, yukarıdaki hedefe kopyala. Son yol `mobile-paywall/SKILL.md` olmalı.
+[Skill klasörünün](../skills/mobwall) tamamını, `references/` dahil, yukarıdaki hedefe kopyala. Son yol `mobwall/SKILL.md` olmalı.
 
 Güncellerken eski skill klasörünü keşif klasörlerinin dışındaki bir yedek konuma taşı, ardından yeni sürümü kur. Aynı skill’i hem `.cursor/skills` hem `.agents/skills` altında tutma.
 
 [Ayrıntılı kurulum ve sorun giderme](installation.md)
+
+Önceki `mobile-paywall` sürümünü kurduysan çift keşfi önlemek için [isim değişikliği adımlarını](installation.md#rename-migration) uygula.
 
 </details>
 
@@ -68,7 +70,7 @@ Güncellerken eski skill klasörünü keşif klasörlerinin dışındaki bir yed
 Ekran görüntünü ekleyip önce analiz iste:
 
 ```text
-mobile-paywall skill’ini kullanarak mevcut paywall’ımı incele.
+mobwall skill’ini kullanarak mevcut paywall’ımı incele.
 İlgili skill referanslarını, ekranı ve kodu oku.
 Gerçek ürünleri, fiyatları ve deneme uygunluğunu koru.
 Önceliklendirilmiş bulgular ve somut tasarım önerisi ver. Şimdilik kod değiştirme.
@@ -77,7 +79,7 @@ Gerçek ürünleri, fiyatları ve deneme uygunluğunu koru.
 Sonra uygulamayı iste:
 
 ```text
-mobile-paywall ile öneriyi mevcut uygulamamda uygula.
+mobwall ile öneriyi mevcut uygulamamda uygula.
 State management, navigation ve ödeme entegrasyonunu koru.
 Var/yok özelliklerinde ✓/—, sayısal limitlerde metin kullan.
 Ekran okuyucu açıklamalarını, geri yüklemeyi ve yenileme koşullarını koru.
@@ -91,7 +93,7 @@ Ekran okuyucu açıklamalarını, geri yüklemeyi ve yenileme koşullarını kor
 | Flutter · iOS/Android hostları | Dart | [İki ekranlı demo](../examples/flutter/README.md): analiz, 8 widget testi; kayıtlı sürümlerde web derlemesi ve tarayıcı kontrolü. |
 | Android · Jetpack Compose | Kotlin | [Native demo](../examples/android/README.md): debug APK derlendi. |
 | iOS · SwiftUI | Swift | [Örnek ekran](../examples/swiftui/README.md): macOS tip kontrolü ve önizleme; yerelde iOS derlemesi yapılmadı. |
-| React Native | JavaScript / TypeScript | [Entegrasyon rehberi](../skills/mobile-paywall/references/implementation.md); hazır proje ve platform testi yok. |
+| React Native | JavaScript / TypeScript | [Entegrasyon rehberi](../skills/mobwall/references/implementation.md); hazır proje ve platform testi yok. |
 
 **Dokümantasyon:** İngilizce ve Türkçe. **Demo arayüzleri:** İngilizce. Skill, ürünün istenen dilini ve mevcut yerelleştirme dosyalarını takip eder; tüm diller için hazır veya test edilmiş çeviri paketi sunmaz.
 
@@ -101,7 +103,7 @@ Kapsamlı onboarding çalışmasında **değer ve Ücretsiz/Plus karşılaştır
 
 Küçük değişikliği tam yeniden tasarıma dönüştürmez. Kullanıcı değeri zaten biliyorsa fazladan ekran zorunlu değildir. İki ekran ve karşılaştırma tablosu test edilecek tasarım seçenekleridir.
 
-[İki ekranlı tasarım](../examples/cases/grove-two-step.md) · [Kaynaklar](../skills/mobile-paywall/references/research.md)
+[İki ekranlı tasarım](../examples/cases/grove-two-step.md) · [Kaynaklar](../skills/mobwall/references/research.md)
 
 ## Bildirilen üretim kullanımı
 

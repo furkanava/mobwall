@@ -1,4 +1,4 @@
-name: mobile_paywall_demo
+name: mobwall_demo
 description: Two-step Grove paywall UI demo with injected billing callbacks.
 publish_to: none
 version: 0.3.0+1

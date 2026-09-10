@@ -1,6 +1,6 @@
 # In-app purchases across seven markets
 
-The developer reports that an Android app using Mobile Paywall received in-app purchases from the markets below, as shown in Google Play Console. Skill usage and sales in these countries were confirmed by the developer on **2026-09-10**; this is the report date, not the purchase observation window.
+The developer reports that an Android app using Mobwall received in-app purchases from the markets below, as shown in Google Play Console. Skill usage and sales in these countries were confirmed by the developer on **2026-09-10**; this is the report date, not the purchase observation window.
 
 **Evidence status: developer-reported.** The underlying Play Console dashboard/export has not been independently reviewed for this repository. The app name, purchase period, counts and exact skill version are not published here.
 

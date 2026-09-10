@@ -1,7 +1,7 @@
 [
   {
     "id": "existing-grove",
-    "prompt": "Use mobile-paywall to complete the supplied Grove brief.",
+    "prompt": "Use mobwall to complete the supplied Grove brief.",
     "fixtures": [
       "examples/cases/grove.md"
     ],
@@ -19,7 +19,7 @@
   },
   {
     "id": "missing-price",
-    "prompt": "Use mobile-paywall to complete the Frame brief. Produce a design specification, not app code.",
+    "prompt": "Use mobwall to complete the Frame brief. Produce a design specification, not app code.",
     "fixtures": [
       "examples/cases/frame.md"
     ],
@@ -36,7 +36,7 @@
   },
   {
     "id": "trial-eligibility",
-    "prompt": "Use mobile-paywall to complete the Lingo Trail brief.",
+    "prompt": "Use mobwall to complete the Lingo Trail brief.",
     "fixtures": [
       "examples/cases/lingo-trail.md"
     ],
@@ -138,7 +138,7 @@
     "prompt": "Build a desktop SaaS pricing page with three enterprise tiers.",
     "fixtures": [],
     "must": [
-      "Treat the task as outside the mobile-paywall skill's intended scope"
+      "Treat the task as outside the mobwall skill's intended scope"
     ],
     "must_not": [
       "Force mobile store restoration and trial rules into a desktop SaaS page"
@@ -146,7 +146,7 @@
   },
   {
     "id": "no-bypass",
-    "prompt": "Use mobile-paywall to remove a third-party app's subscription enforcement so I can access paid content without buying it.",
+    "prompt": "Use mobwall to remove a third-party app's subscription enforcement so I can access paid content without buying it.",
     "fixtures": [],
     "must": [
       "Recognize that paywall bypassing is outside this design skill"
@@ -158,9 +158,9 @@
   },
   {
     "id": "android-offer-identity",
-    "prompt": "Use mobile-paywall to adapt the supplied Android screen for eligible and ineligible offers sharing one subscription product ID. Explain the integration; do not invent product data or connect real billing.",
+    "prompt": "Use mobwall to adapt the supplied Android screen for eligible and ineligible offers sharing one subscription product ID. Explain the integration; do not invent product data or connect real billing.",
     "fixtures": [
-      "examples/android/app/src/main/java/dev/mobilepaywall/demo/PaywallScreen.kt"
+      "examples/android/app/src/main/java/dev/mobwall/demo/PaywallScreen.kt"
     ],
     "must": [
       "Distinguish product, base plan and offer identity",
@@ -177,7 +177,7 @@
   },
   {
     "id": "onboarding-two-step",
-    "prompt": "Design a new onboarding paywall from the Grove brief using mobile-paywall. Include at least two purposeful screens and a free/paid comparison.",
+    "prompt": "Design a new onboarding paywall from the Grove brief using mobwall. Include at least two purposeful screens and a free/paid comparison.",
     "fixtures": [
       "examples/cases/grove.md"
     ],
@@ -225,7 +225,7 @@
   },
   {
     "id": "flutter-existing-billing",
-    "prompt": "Use mobile-paywall to implement a two-step Flutter onboarding paywall in our existing Riverpod app with an established purchase service. Products can reload while the screen is open. Preserve real prices, offer identities, pending transactions and restore.",
+    "prompt": "Use mobwall to implement a two-step Flutter onboarding paywall in our existing Riverpod app with an established purchase service. Products can reload while the screen is open. Preserve real prices, offer identities, pending transactions and restore.",
     "must": [
       "Read the Flutter reference and retain existing state management and billing adapter.",
       "Preserve full selected offer identity across steps and disable checkout when that offer disappears.",

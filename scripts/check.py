@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def check(root=ROOT):
     errors = []
-    skill = root / "skills/mobile-paywall/SKILL.md"
+    skill = root / "skills/mobwall/SKILL.md"
     content = skill.read_text(encoding="utf-8")
     match = re.match(r"\A---\n(.*?)\n---\n", content, re.S)
     if not match:
@@ -25,7 +25,7 @@ def check(root=ROOT):
             if not separator or not value.strip() or key in fields:
                 errors.append("Invalid or duplicate frontmatter field: " + line)
             fields[key] = value.strip()
-        if fields.get("name") != "mobile-paywall":
+        if fields.get("name") != "mobwall":
             errors.append("Skill name must match its folder")
         if not 1 <= len(fields.get("description", "")) <= 1024:
             errors.append("Description must be 1–1024 characters")

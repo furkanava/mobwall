@@ -29,7 +29,7 @@ class InstallerTests(unittest.TestCase):
         for agent, folder in installer.ROOTS.items():
             with self.subTest(agent=agent):
                 self.run_install([agent])
-                target = self.project / folder / "skills/mobile-paywall"
+                target = self.project / folder / "skills/mobwall"
                 self.assertEqual(installer.snapshot(target), installer.snapshot(installer.SOURCE))
 
     def test_all_deduplicates_shared_discovery_path(self):
@@ -62,7 +62,7 @@ class InstallerTests(unittest.TestCase):
         self.assertEqual((target / "custom.txt").read_text(), "keep")
 
     def test_preflight_prevents_partial_install_on_conflict(self):
-        target = self.project / ".claude/skills/mobile-paywall"
+        target = self.project / ".claude/skills/mobwall"
         target.mkdir(parents=True)
         (target / "SKILL.md").write_text("custom")
         with self.assertRaises(ValueError):
@@ -110,12 +110,12 @@ class InstallerTests(unittest.TestCase):
         with patch.object(installer.shutil, "copytree", side_effect=OSError("disk full")):
             with self.assertRaises(OSError):
                 self.run_install()
-        self.assertFalse((self.project / ".agents/skills/mobile-paywall").exists())
+        self.assertFalse((self.project / ".agents/skills/mobwall").exists())
 
     def test_cli_works_from_an_unrelated_directory(self):
         result = subprocess.run([sys.executable, str(ROOT / "scripts/install.py"), "--agent", "all", "--project", str(self.project)], cwd=self.temp.name, capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertTrue((self.project / ".claude/skills/mobile-paywall/SKILL.md").is_file())
+        self.assertTrue((self.project / ".claude/skills/mobwall/SKILL.md").is_file())
 
     def test_cli_invalid_agent_fails_without_writes(self):
         result = subprocess.run([sys.executable, str(ROOT / "scripts/install.py"), "--agent", "invalid", "--project", str(self.project)], capture_output=True)
