@@ -31,7 +31,7 @@ Copy [paywall_flow.dart](lib/paywall_flow.dart) into your existing app and adapt
 - Hoist `loading`, `error`, `busy` and `status` from your controller. `busy` can remain true for a pending store transaction after a callback returns. Expected cancellation should return normally; report neutral status if needed. Translate failures to safe messages instead of exposing raw store errors.
 - Keep purchase stream, verification, completion/acknowledgment and restore reconciliation in the established application service. Closing this widget must not lose a pending transaction. Route verified existing subscribers through the host's existing access flow.
 - The sample preserves plan selection across its two steps. Its first-step Back/close calls `onDismiss`; adapt this to your navigator. The demo returns to a free-entry placeholder. iOS gesture behavior and Android predictive Back require device verification.
-- Layout uses safe areas and scrolling. At narrow widths or larger text, the table becomes labeled feature cards. Localize the English strings and replace fictional entitlements; don't invent differences between billing periods.
+- Layout uses safe areas and scrolling. Binary features use ✓/— with descriptive screen-reader labels; limits stay as text. At narrow widths or larger text, the table becomes labeled feature cards. Localize the English strings and replace fictional entitlements; don't invent differences between billing periods.
 
 ## Verification limits
 

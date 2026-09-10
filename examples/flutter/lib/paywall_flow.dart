@@ -348,6 +348,12 @@ class _OfferCard extends StatelessWidget {
 
 class _Comparison extends StatelessWidget {
   const _Comparison();
+
+  static String _display(String value) => switch (value) {
+    'Included' => '✓',
+    'Not included' => '—',
+    _ => value,
+  };
   @override
   Widget build(BuildContext context) => LayoutBuilder(
     builder: (context, constraints) {
@@ -369,8 +375,13 @@ class _Comparison extends StatelessWidget {
                     for (final row in rows)
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 8),
-                        child: Text(
-                          '${row[0]}\nFree: ${row[1]}\nPlus: ${row[2]}',
+                        child: Semantics(
+                          container: true,
+                          label: '${row[0]}, Free: ${row[1]}, Plus: ${row[2]}',
+                          excludeSemantics: true,
+                          child: Text(
+                            '${row[0]}\nFree: ${_display(row[1])}\nPlus: ${_display(row[2])}',
+                          ),
                         ),
                       ),
                   ],
@@ -403,19 +414,29 @@ class _Comparison extends StatelessWidget {
                             child: Text(row[0]),
                           ),
                           Semantics(
+                            container: true,
                             label: '${row[0]}, Free: ${row[1]}',
                             excludeSemantics: true,
                             child: Padding(
                               padding: const EdgeInsets.all(6),
-                              child: Text(row[1]),
+                              child: Text(_display(row[1])),
                             ),
                           ),
                           Semantics(
+                            container: true,
                             label: '${row[0]}, Plus: ${row[2]}',
                             excludeSemantics: true,
                             child: Padding(
                               padding: const EdgeInsets.all(6),
-                              child: Text(row[2]),
+                              child: Text(
+                                _display(row[2]),
+                                style: row[2] == 'Included'
+                                    ? const TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Color(0xff315646),
+                                      )
+                                    : null,
+                              ),
                             ),
                           ),
                         ],

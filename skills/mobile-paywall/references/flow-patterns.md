@@ -22,7 +22,7 @@ Include a compact table in the candidate when the free/paid boundary or tier dif
 
 - Compare **entitlements**, not monthly vs annual billing when both unlock the same features.
 - Use actual names/limits from the product, with visible row labels and readable column headers. Do not invent “unlimited,” free-tier limitations, or locked features to manufacture value.
-- Include words such as “Included,” “5 sessions,” or “Not included.” A checkmark or color alone is insufficient.
+- Prefer a visible ✓ for included and — for not included in binary feature rows. Keep numeric limits and meaningful differences as text (for example “2 messages/day” versus “Unlimited”). Provide localized screen-reader labels such as “Offline listening, Premium: Included”; never depend on color or an unlabeled glyph. Keep plan headers clear and explain the symbols when their meaning is ambiguous.
 - At narrow widths or larger text, reflow to labeled comparison cards per feature; keep the same information. Do not shrink important text into a desktop-style matrix.
 - Keep total price and commitment on the purchase step prominent. A feature table cannot replace renewal/trial disclosure.
 

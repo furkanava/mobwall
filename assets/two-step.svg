@@ -27,8 +27,8 @@
 <text x="467" y="604" text-anchor="middle" font-size="15" font-weight="700">Full library</text>
 <line x1="124" y1="642" x2="520" y2="642" stroke="#DDE2D7"/>
 <text x="124" y="689" font-size="16">Offline listening</text>
-<text x="345" y="689" text-anchor="middle" font-size="14">Not included</text>
-<text x="467" y="689" text-anchor="middle" font-size="15" font-weight="700">Included</text>
+<text x="345" y="689" text-anchor="middle" font-size="22" aria-label="Free: Not included">—</text>
+<text x="467" y="689" text-anchor="middle" font-size="24" font-weight="700" aria-label="Plus: Included">✓</text>
 <rect x="106" y="769" width="432" height="58" rx="16" fill="#305443"/>
 <text x="322" y="805" text-anchor="middle" font-size="19" fill="#FFFFFF" font-weight="700">See plans →</text>
 <text x="322" y="868" text-anchor="middle" font-size="16">Continue with free sessions</text>

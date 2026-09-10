@@ -180,8 +180,20 @@ void main() {
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.resetPhysicalSize);
     addTearDown(tester.view.resetDevicePixelRatio);
+    final semantics = tester.ensureSemantics();
     await tester.pumpWidget(host(scaler: TextScaler.linear(2)));
+    await tester.ensureVisible(
+      find.text('Offline listening\nFree: —\nPlus: ✓'),
+    );
+    await tester.pumpAndSettle();
     expect(tester.takeException(), isNull);
+    expect(
+      find.bySemanticsLabel(
+        'Offline listening, Free: Not included, Plus: Included',
+      ),
+      findsOneWidget,
+    );
+    semantics.dispose();
     await tapVisible(tester, find.text('See plans'));
     await tapVisible(tester, find.text('Monthly'));
     await tapVisible(tester, find.text('Privacy'));

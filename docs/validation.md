@@ -1,6 +1,6 @@
 # Validation record
 
-Release candidate: **0.3.2**, checked **2026-09-10**. This record states what was exercised locally. CI configuration and behavioral rubrics are not completed runs.
+Release candidate: **0.3.3**, checked **2026-09-10**. This record states what was exercised locally. CI configuration and behavioral rubrics are not completed runs.
 
 | Check | Result | Evidence and limits |
 | --- | --- | --- |
@@ -47,6 +47,10 @@ External catalog connector instructions, associated video references and source-
 ## Country report update in 0.3.2
 
 The developer confirmed skill usage and purchases in seven Google Play Console markets. The public case now attributes those facts to the developer and distinguishes the report date from the unpublished observation window. Seven local SVG flags replace emoji, with upstream license and pinned source revision. SVG XML, dimensions and Markdown file links were checked. Application code is unchanged.
+
+## Comparison update in 0.3.3
+
+Binary availability now uses ✓/—, while actual limits remain text. The Flutter table and compact feature cards expose separate contextual semantics. All eight widget tests passed, including compact 2× text and the availability label. Dart analysis and package checks passed. The updated SVG illustration was rendered and visually inspected; the modified Flutter view was not rerun in a browser or native device this release.
 
 ## Client compatibility
 

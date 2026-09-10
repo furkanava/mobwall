@@ -22,7 +22,9 @@ Supporting copy: **Keep your five free starter sessions, or unlock the full libr
 | What you get | Free | Plus |
 | --- | --- | --- |
 | Guided sessions | 5 starter sessions | Full library |
-| Offline listening | Not included | Included |
+| Offline listening | — | ✓ |
+
+✓ = Included; — = Not included. In the implemented UI, expose feature and plan names plus availability to screen readers. Keep session limits as text.
 
 Use two honest rows instead of padding the table with invented benefits. The supplied brief establishes these differences; it does not specify session counts for Plus, AI coaching, guaranteed wellbeing outcomes, or a free trial.
 
