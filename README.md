@@ -79,7 +79,11 @@ The installer only copies local skill files into your chosen project. It makes n
 
 ## Production evidence
 
-A [country case-study format](docs/country-case-study.md) is ready with 🇺🇸 🇬🇧 🇮🇳 🇹🇷 🇰🇿 🇫🇮 🇧🇪. No app identity, observation window or production purchase evidence has been supplied for it yet, so it is not presented as a verified success story. Documented owner reports will be attributed separately from controlled experiments.
+An Android app using Mobile Paywall has received in-app purchases from seven markets, according to its developer's Google Play Console report.
+
+![United States](assets/flags/us.svg) United States · ![United Kingdom](assets/flags/gb.svg) United Kingdom · ![India](assets/flags/in.svg) India · ![Türkiye](assets/flags/tr.svg) Türkiye · ![Kazakhstan](assets/flags/kz.svg) Kazakhstan · ![Finland](assets/flags/fi.svg) Finland · ![Belgium](assets/flags/be.svg) Belgium
+
+[Read the developer-reported case](docs/country-case-study.md). The underlying Play Console records have not been independently reviewed for this repository; this reports geographic reach, not measured conversion uplift.
 
 ## Develop and contribute
 

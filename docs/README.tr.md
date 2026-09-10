@@ -31,7 +31,7 @@ Skill artık kapsamlı onboarding tasarımlarında önce kaynakları inceleyip t
 
 [Araştırma kaydı](../skills/mobile-paywall/references/research.md), onboarding araştırmasının yöntemini ve sınırlarını açıklar. Referans araştırması, kullanıcının sağladığı ekranlar, mevcut kod ve erişilebilir web kaynaklarıyla yürütülür.
 
-[Bayraklı ülke vaka şablonu](country-case-study.md): 🇺🇸 🇬🇧 🇮🇳 🇹🇷 🇰🇿 🇫🇮 🇧🇪. Uygulama ve gerçek satın alma verileri henüz sağlanmadığı için doğrulanmış başarı iddiası olarak sunulmaz.
+Geliştiricinin bildirimine göre, Mobile Paywall kullanılan bir Android uygulaması Google Play Console’da yedi pazardan uygulama içi satın alma aldı. [Ülke bazlı vaka kaydı](country-case-study.md), SVG bayrakları ve kanıt durumunu içerir. Console kayıtları bu repo için bağımsız incelenmedi; dönüşüm artışı iddiası yoktur.
 
 ## İçerik
 

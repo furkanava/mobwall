@@ -1,29 +1,21 @@
-# Country purchase case study — awaiting evidence
+# In-app purchases across seven markets
 
-This is a prepared submission format, **not a claim that these purchases occurred or that Mobile Paywall caused them**. The requested countries are shown below; the app, period, purchase data, and skill usage have not yet been provided.
+The developer reports that an Android app using Mobile Paywall received in-app purchases from the markets below, as shown in Google Play Console. Skill usage and sales in these countries were confirmed by the developer on **2026-09-10**; this is the report date, not the purchase observation window.
 
-🇺🇸 **United States** · 🇬🇧 **United Kingdom** · 🇮🇳 **India** · 🇹🇷 **Türkiye** · 🇰🇿 **Kazakhstan** · 🇫🇮 **Finland** · 🇧🇪 **Belgium**
+**Evidence status: developer-reported.** The underlying Play Console dashboard/export has not been independently reviewed for this repository. The app name, purchase period, counts and exact skill version are not published here.
 
-| Market | Current evidence status |
+| Market | Reported source |
 | --- | --- |
-| 🇺🇸 United States | Not yet documented |
-| 🇬🇧 United Kingdom | Not yet documented |
-| 🇮🇳 India | Not yet documented |
-| 🇹🇷 Türkiye | Not yet documented |
-| 🇰🇿 Kazakhstan | Not yet documented |
-| 🇫🇮 Finland | Not yet documented |
-| 🇧🇪 Belgium | Not yet documented |
+| ![United States](../assets/flags/us.svg) United States | Developer’s Google Play Console report |
+| ![United Kingdom](../assets/flags/gb.svg) United Kingdom | Developer’s Google Play Console report |
+| ![India](../assets/flags/in.svg) India | Developer’s Google Play Console report |
+| ![Türkiye](../assets/flags/tr.svg) Türkiye | Developer’s Google Play Console report |
+| ![Kazakhstan](../assets/flags/kz.svg) Kazakhstan | Developer’s Google Play Console report |
+| ![Finland](../assets/flags/fi.svg) Finland | Developer’s Google Play Console report |
+| ![Belgium](../assets/flags/be.svg) Belgium | Developer’s Google Play Console report |
 
-## Supply the case details
+These purchases demonstrate developer-reported geographic reach. They do not establish how much the skill changed conversion or revenue, or that it caused the purchases. No purchase counts, revenue totals or controlled experiment results are claimed.
 
-- App name/store link, owner attribution or an explicitly anonymized app description.
-- Which skill version or predecessor workflow was actually used and when. Earlier purchases cannot prove use of a newly created skill.
-- Observation dates, iOS/Android store, and the country field's meaning (for example storefront, not assumed nationality or residence).
-- Production purchase evidence with sandbox/test transactions excluded. State whether counts mean transactions or unique paying customers; distinguish renewals, initial purchases and refunds.
-- Evidence source and status: owner report, redacted dashboard/export, or independently reviewable evidence. Do not publish receipts, transaction identifiers, customer identities, credentials or private exports.
+## Details for a fuller public case
 
-Once supported, summarize the documented geographic reach with these flags and attribute the report clearly. Purchases from multiple markets demonstrate reported reach; they do not by themselves prove conversion uplift, localization quality, seven successful experiments, or causation by this skill.
-
-## Publication wording structure
-
-Use the identified app, date range, precisely supported countries and evidence status in one concise sentence. Keep any lack of independent verification adjacent to an owner-reported claim. Omit numerical or causal claims that the evidence cannot establish. The repository's README should link a completed case only after those facts are supplied.
+A future update can add the app/store link, skill version and usage dates, purchase observation period, and a redacted country breakdown. Specify how the Play Console report defines country and whether numbers refer to transactions or paying customers; separate initial purchases, renewals, refunds and test transactions. Publish only information the developer has authorized for release.

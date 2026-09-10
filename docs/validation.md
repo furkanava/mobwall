@@ -1,6 +1,6 @@
 # Validation record
 
-Release candidate: **0.3.1**, checked **2026-09-10**. This record states what was exercised locally. CI configuration and behavioral rubrics are not completed runs.
+Release candidate: **0.3.2**, checked **2026-09-10**. This record states what was exercised locally. CI configuration and behavioral rubrics are not completed runs.
 
 | Check | Result | Evidence and limits |
 | --- | --- | --- |
@@ -24,7 +24,7 @@ The skill, research references, evaluation fixtures, and documentation changed i
 | Check | Result | Evidence and limits |
 | --- | --- | --- |
 | Two-step design | Rendered and visually inspected | Original `assets/two-step.svg` was rasterized and inspected for typography, table readability, billing text and bounds. It is a design specification, not a running two-step native implementation. |
-| Country purchase case | Awaiting evidence | Flags and a submission template are included. No app identity, production purchase records or skill attribution were supplied. |
+| Country purchase case | Developer-reported | On 2026-09-10 the developer confirmed skill usage and Google Play Console purchases in seven countries. Underlying records have not been independently reviewed; app, observation period, counts and exact version are unpublished. |
 
 ## Flutter update in 0.3.0
 
@@ -43,6 +43,10 @@ Flutter 3.44.7 / Dart 3.12.2 were used from an isolated SDK/cache copy. Existing
 ## Documentation update in 0.3.1
 
 External catalog connector instructions, associated video references and source-specific evaluation scenarios were removed. Research now uses supplied app artifacts and accessible first-party sources. The worked comparison is between authored Grove alternatives. Package structure, links and 16 evaluation fixtures were checked; all 15 installer tests passed. Native and Flutter code did not change, so their previously recorded checks were not rerun.
+
+## Country report update in 0.3.2
+
+The developer confirmed skill usage and purchases in seven Google Play Console markets. The public case now attributes those facts to the developer and distinguishes the report date from the unpublished observation window. Seven local SVG flags replace emoji, with upstream license and pinned source revision. SVG XML, dimensions and Markdown file links were checked. Application code is unchanged.
 
 ## Client compatibility
 
