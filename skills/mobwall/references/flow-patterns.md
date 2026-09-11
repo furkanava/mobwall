@@ -22,9 +22,14 @@ Include a compact table in the candidate when the free/paid boundary or tier dif
 
 - Compare **entitlements**, not monthly vs annual billing when both unlock the same features.
 - Use actual names/limits from the product, with visible row labels and readable column headers. Do not invent “unlimited,” free-tier limitations, or locked features to manufacture value.
-- Prefer a visible ✓ for included and — for not included in binary feature rows. Keep numeric limits and meaningful differences as text (for example “2 messages/day” versus “Unlimited”). Provide localized screen-reader labels such as “Offline listening, Premium: Included”; never depend on color or an unlabeled glyph. Keep plan headers clear and explain the symbols when their meaning is ambiguous.
-- At narrow widths or larger text, reflow to labeled comparison cards per feature; keep the same information. Do not shrink important text into a desktop-style matrix.
+- Treat the comparison as a designed component, not plain aligned text. Give it a clear container, visible row separators, and enough column separation that users can track a value across the row. Use subtle vertical dividers when three or more plan columns or similar numeric values make alignment easy to lose.
+- Prefer a visible ✓ for included and — for not included in binary feature rows. Keep numeric limits and meaningful differences as text (for example “2 messages/day” versus “Unlimited”). Use tabular numbers where the platform supports them, and align numeric values consistently. Provide localized screen-reader labels such as “Offline listening, Premium: Included”; never depend on color or an unlabeled glyph. Keep plan headers clear and explain the symbols when their meaning is ambiguous.
+- Visually distinguish the selected or recommended plan column only when the recommendation is supported by the product strategy. Use a tinted header, stronger border, badge, or selected-state treatment; do not make the unselected tiers illegible.
+- Keep table borders quiet but present: a 1 px outline, row dividers, sufficient cell padding, and restrained background tint usually read better on mobile than a borderless matrix or a heavy spreadsheet grid.
+- At narrow widths or larger text, reflow to labeled comparison cards per feature or per plan; keep the same information and row labels. Do not shrink important text into a desktop-style matrix or rely on horizontal scrolling for a primary purchase decision.
 - Keep total price and commitment on the purchase step prominent. A feature table cannot replace renewal/trial disclosure.
+
+Reference patterns checked 2026-09-11: shadcn table examples use semantic table structure, row hover/dividers and horizontal overflow for wide static tables; shadcn-style feature matrices commonly group rows, use checkmarks/dashes, quantities and highlighted plan columns; Material data-table guidance describes data tables as row/column grids with container outlines, row heights/padding and right-aligned numeric columns. Apply those patterns within the host platform's native UI primitives rather than copying web styling verbatim.
 
 ## Selecting plans and reassurance
 

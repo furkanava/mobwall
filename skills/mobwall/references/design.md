@@ -27,6 +27,8 @@ Provide element order, exact UI copy, selected/unselected plan appearance, spaci
 
 Plan cards should clearly distinguish selection from decoration. Do not rely on color alone. Show total charge and period, then optional verified savings or price equivalents. Keep important terms legible rather than treating them as decorative fine print.
 
+Comparison tables should be intentionally styled. Specify the container, row dividers, column dividers when needed, header treatment, selected/recommended column treatment, cell padding, numeric alignment, and mobile reflow. A borderless set of labels and values is usually too easy to misread on a paywall.
+
 Use one visually primary purchase action. Other controls still need to be discoverable. Match the CTA to the action and eligibility, such as “Subscribe annually” or “Start 7-day free trial.” Never infer trial eligibility from a pricing label alone.
 
 ## Review the visual result
