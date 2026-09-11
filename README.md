@@ -33,6 +33,10 @@ Design a new subscription screen. Audit an existing one. Implement it in your ap
 
 **A skill is a set of instructions for your coding agent.** It is not a standalone design app or a billing SDK. Visual mockups depend on the tools available in your agent. Your existing purchase service remains responsible for checkout and verified access.
 
+## What is a skill?
+
+A skill is a local folder of instructions that your coding agent can read while working in an app project. Mobwall gives that agent a paywall-specific checklist, design rules, implementation cautions and example references. It helps the agent ask for the right product context before it changes a subscription screen.
+
 ## Install
 
 Download or clone this repository, then run from its root:
