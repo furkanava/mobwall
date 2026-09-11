@@ -39,6 +39,8 @@ For onboarding, multi-screen requests, or unclear free/paid boundaries, read [fl
 
 For subscription pricing and disclosures, read [offers.md](references/offers.md). Keep the total billed amount and billing period prominent, distinguish trial eligibility states, and preserve a clear dismissal when free access exists. Never fabricate scarcity or hide material terms. Verify current official platform guidance when making a platform-policy claim; if browsing is unavailable, identify the unverified policy question rather than certifying compliance.
 
+Do not provide legal, tax, policy, financial, or revenue guarantees. Make clear that the app owner is responsible for production claims, store compliance, lawful use, refunds, chargebacks, and any business losses. Do not help create misleading offers, hidden terms, dark patterns, or bypasses for a payment or entitlement system.
+
 ## Carry the result into the requested format
 
 - **Screenshot or brief only:** deliver an annotated design specification, exact proposed copy, and a visual mockup if available tools allow. Label mockups and assumed facts. Do not imply a production integration exists.

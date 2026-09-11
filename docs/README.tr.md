@@ -125,6 +125,10 @@ Geliştirici, bu skill kullanılan Android uygulamasının Google Play Console�
 
 [Sürüm ve test ayrıntıları](validation.md) · [Katkı rehberi](../CONTRIBUTING.md)
 
+## Sorumluluk ve kötüye kullanım
+
+Mobwall tasarım ve uygulama desteği için sunulur. Nasıl kullandığından, ne yayınladığından ve uygulamanın mağaza kurallarına, tüketici hukukuna, gizlilik kurallarına, vergi kurallarına ve diğer geçerli gerekliliklere uyup uymadığından sen sorumlusun. Proje sahipleri; hukuka aykırı kullanım, yanıltıcı teklifler, uygulama reddi, iade, chargeback, gelir kaybı, kar kaybı, iş kesintisi veya bu projeyi kullanmanla bağlantılı herhangi bir kayıp ya da zarardan sorumlu değildir.
+
 Özgün proje içeriği **[MIT lisanslıdır](../LICENSE)**; ticari kullanım da mümkündür. Hesap, lisans anahtarı, telemetri ve zorunlu harici bağlantı yoktur. AI sağlayıcısının kendi kullanım ücretleri olabilir. Demo ödeme işlemleri gerçekte para çekmez.
 
 [Gradle](../examples/android/gradle/README.md), [Flutter](../examples/flutter/FLUTTER_LICENSE) ve [bayraklar](../assets/flags/README.md) kendi lisans bildirimlerini korur.

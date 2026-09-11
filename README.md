@@ -146,6 +146,10 @@ Flutter analysis/tests and platform build instructions live with each example. [
 
 </details>
 
+## Responsibility and misuse
+
+Mobwall is provided for design and implementation assistance. You are responsible for how you use it, what you ship, and whether your app complies with store rules, consumer law, privacy rules, tax rules, and other applicable requirements. The project maintainers are not responsible for unlawful use, misleading offers, rejected app submissions, refunds, chargebacks, lost revenue, lost profits, business interruption, or any other loss or damage connected to using this project.
+
 ## Free to use, including commercially
 
 Original project content is [MIT licensed](LICENSE). No account, license key, telemetry or required connector. Your AI provider may charge for usage. Sample billing callbacks perform no real payments.
