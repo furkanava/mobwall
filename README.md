@@ -148,7 +148,7 @@ Flutter analysis/tests and platform build instructions live with each example. [
 
 ## Responsibility and misuse
 
-Mobwall is provided for design and implementation assistance. You are responsible for how you use it, what you ship, and whether your app complies with store rules, consumer law, privacy rules, tax rules, and other applicable requirements. The project maintainers are not responsible for unlawful use, misleading offers, rejected app submissions, refunds, chargebacks, lost revenue, lost profits, business interruption, or any other loss or damage connected to using this project.
+Mobwall is provided for design and implementation assistance. It is not legal, tax, financial, policy-compliance, payment-processing or revenue advice. You are responsible for how you use it, what you ship, and whether your app complies with store rules, consumer law, privacy rules, tax rules, and other applicable requirements. The project maintainers are not responsible for unlawful use, misleading offers, rejected app submissions, refunds, chargebacks, lost revenue, lost profits, business interruption, or any other loss or damage connected to using this project. See the [full disclaimer](DISCLAIMER.md).
 
 ## Free to use, including commercially
 
